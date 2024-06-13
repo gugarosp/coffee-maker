@@ -1,0 +1,18 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+header {
+    background: url(../images/painted-detail.png) no-repeat bottom,
+                url(../images/hero.jpg) no-repeat;
+    background-size: contain, cover;
+}
+
+main {
+    background-image: url(../images/texture.png);
+    background-size: 10vw;
+}
