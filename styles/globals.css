@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background: url(../images/painted-detail.png) no-repeat bottom, url(../images/hero.jpg) no-repeat;
+  background: url(../images/painted-detail.png) no-repeat bottom, url(../images/hero.jpg) no-repeat center;
   background-size: contain, cover;
 }
 
