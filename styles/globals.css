@@ -5,11 +5,28 @@ html, body {
 body {
   font-family: "Minion Pro", serif;
   font-size: 14px;
+  letter-spacing: 0.025rem;
+}
+
+header > .row, header > nav .row, section > .row, section > nav .row, footer > .row, footer > nav .row {
+  width: 100%;
+  max-width: 1200px;
 }
 
 header {
+  min-height: 580px;
   background: url(../images/painted-detail.png) no-repeat bottom, url(../images/hero.jpg) no-repeat center;
   background-size: contain, cover;
+}
+header nav {
+  width: 100%;
+  height: 72px;
+}
+header #logo-container {
+  margin-left: 10px;
+}
+header #logo {
+  width: 200px;
 }
 header menu span {
   aspect-ratio: 1;
@@ -18,26 +35,73 @@ header menu span {
 }
 header menu a {
   font-family: "Intro", sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.625rem;
+  letter-spacing: 0.025rem;
+  color: rgba(var(--bs-light-rgb));
+  transition: color 0.5s, box-shadow 0.5s;
+}
+header menu a:hover {
+  color: rgb(var(--bs-warning-rgb));
+  box-shadow: inset 0px -2px 0px 0px rgb(var(--bs-warning-rgb));
+}
+header menu i {
+  font-size: 0.25rem;
 }
 header address {
   font-family: "Intro", sans-serif;
 }
+header #menu-line {
+  display: flex;
+}
+header #menu-line .menu-line-side {
+  flex-grow: 1;
+}
+header #menu-line #menu-line-center {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 220px;
+}
+header #hero-stars {
+  font-size: 0.625rem;
+}
+header .pointy-arrow-left,
+header .pointy-arrow-right {
+  width: 102px;
+  height: 5px;
+  background-color: #cdb47b;
+}
+header .pointy-arrow-left {
+  -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
+          clip-path: polygon(100% 0, 0 50%, 100% 100%);
+}
+header .pointy-arrow-right {
+  -webkit-clip-path: polygon(0 0, 100% 50%, 0 100%);
+          clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+header h1 {
+  font-size: 3.25rem;
+}
+header #hero-bottom-detail .pointy-arrow-left,
+header #hero-bottom-detail .pointy-arrow-right {
+  width: 64px;
+  height: 4px;
+}
+header #hero-bottom-detail i {
+  color: #cdb47b;
+  font-size: 0.4rem;
+}
 header button {
   aspect-ratio: 1;
+}
+header button i {
+  position: relative;
+  top: 1px;
+  font-size: 1rem;
 }
 
 main {
   background-image: url(../images/texture.png);
   background-size: 10vw;
-}
-main .pointy-arrow-left {
-  -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
-          clip-path: polygon(100% 0, 0 50%, 100% 100%);
-}
-main .pointy-arrow-right {
-  -webkit-clip-path: polygon(0 0, 100% 50%, 0 100%);
-          clip-path: polygon(0 0, 100% 50%, 0 100%);
 }
 
 #programs .tabs .tab-buttons {
