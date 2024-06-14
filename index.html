@@ -3,37 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Coffee Maker</title>
 
     <link href="styles/bootstrap.min.css" rel="stylesheet">
     <link href="fonts/fonts.css" rel="stylesheet">
+    <link href="styles/colors.css" rel="stylesheet">
     <link href="styles/globals.css" rel="stylesheet">
     <link href="styles/headings.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/3972107aac.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
-    <header class="h-100">
-        <h1 class="text-center text-light">barista training in <span class="text-warning">amsterdam</span></h1>
+    <header class="container-fluid h-100 d-flex flex-column">
+        <nav class="row">
+            <div class="col-12 d-flex justify-content-end gap-5">
+                <div class="d-inline-block me-auto">
+                    <a href="/"><img src="images/logo.png" alt="Coffee Maker"/></a>
+                </div>
+                <menu class="d-inline-flex align-items-center m-0 px-5">
+                    <li class="list-group-item"><a href="#" class="text-light text-decoration-none">program</a></li>
+                    <li class="list-group-item"><span class="bg-white d-inline-block rounded-circle"></li>
+                    <li class="list-group-item"><a href="#" class="text-light text-decoration-none">gallery</a></li>
+                    <li class="list-group-item"><span class="bg-white d-inline-block rounded-circle"></li>
+                    <li class="list-group-item"><a href="#" class="text-light text-decoration-none">reviews</a></li>
+                    <li class="list-group-item"><span class="bg-white d-inline-block rounded-circle"></li>
+                    <li class="list-group-item"><a href="#" class="text-light text-decoration-none">partners</a></li>
+                    <li class="list-group-item"><span class="bg-white d-inline-block rounded-circle"></li>
+                    <li class="list-group-item"><a href="#" class="text-light text-decoration-none">contact</a></li>
+                </menu>
+                <address class="d-inline-flex align-items-center h-100 m-0">
+                    <a href="tel:+380996611730" class="text-light fs-5">+38 (099) 66-11-730</a>
+                </address>
+            </div>
+        </nav>
+        <div id="hero-info" class="text-center">
+            <div class="mb-4">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+            </div>
+            <div class="d-flex justify-content-center mb-4">
+                <div class="bg-warning pointy-arrow-left">_</div>
+                <span class="title-alternative text-light">Intensive program barista training</span>
+                <div class="bg-warning pointy-arrow-right">_</div>
+            </div>
+            <h1 class="text-light fs-1 mb-4">barista training in <span class="text-warning">amsterdam</span></h1>
+            <h6 class="title-alternative text-light mb-4">On the basis of the company's largest coffee roasters</h5>
+            <div class="d-flex justify-content-center mb-4">
+                <div class="bg-warning pointy-arrow-left">.</div>
+                <div class="bg-warning">o</div>
+                <div class="bg-warning pointy-arrow-right">.</div>
+            </div>
+            <button type="button" class="btn btn-outline-light btn-lg rounded-circle"><i class="fa-solid fa-chevron-down text-warning"></i></button>
+        </div>
     </header>
     <main>
         <section>
-            <h2 class="text-center">programs</h2>
+            <h2 class="text-center text-dark fs-2">programs</h2>
         </section>
         <section>
-            <h2 class="text-center">gallery</h2>
+            <h2 class="text-center text-light fs-2">gallery</h2>
         </section>
         <section>
-            <h2 class="text-center">testimonials</h2>
+            <h2 class="text-center text-dark fs-2">testimonials</h2>
         </section>
         <section>
-            <h2 class="text-center">our partners</h2>
+            <h2 class="text-center text-dark fs-2">our partners</h2>
         </section>
         <section>
-            <h2 class="text-center">have questions?</h2>
+            <h2 class="text-center text-dark fs-2">have questions?</h2>
         </section>
     </main>
     <footer>
-        <h2 class="text-center">professional school barista</h2>
+        <h2 class="text-center text-light fs-2">professional school barista</h2>
     </footer>
 </body>
 </html>

@@ -1,11 +1,7 @@
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Intro Rust G Base 2 Line";
+  font-family: "Intro Rust G Base 2 Line", sans-serif;
 }
 
-h1 {
-  font-size: 46px;
-}
-
-h2 {
-  font-size: 40px;
+.title-alternative {
+  font-family: "Playfair Display", serif;
 }/*# sourceMappingURL=headings.css.map */

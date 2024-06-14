@@ -1,3 +1,7 @@
+@mixin fontFamilyIntro {
+    font-family: 'Intro', sans-serif;
+}
+
 html, body {
     height: 100%;
 }
@@ -10,9 +14,38 @@ header {
     background: url(../images/painted-detail.png) no-repeat bottom,
                 url(../images/hero.jpg) no-repeat center;
     background-size: contain, cover;
+
+    menu {
+        span {
+            aspect-ratio: 1;
+            width: 4px;
+            align-self: flex-start;
+        }
+
+        a {
+            @include fontFamilyIntro;
+            font-size: .75rem;
+        }
+    }
+
+    address {
+        @include fontFamilyIntro;
+    }
+
+    button {
+        aspect-ratio: 1;
+    }
 }
 
 main {
     background-image: url(../images/texture.png);
     background-size: 10vw;
+}
+
+.pointy-arrow-left {
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+}
+
+.pointy-arrow-right {
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
 }

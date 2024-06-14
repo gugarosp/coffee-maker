@@ -10,8 +10,33 @@ header {
   background: url(../images/painted-detail.png) no-repeat bottom, url(../images/hero.jpg) no-repeat center;
   background-size: contain, cover;
 }
+header menu span {
+  aspect-ratio: 1;
+  width: 4px;
+  align-self: flex-start;
+}
+header menu a {
+  font-family: "Intro", sans-serif;
+  font-size: 0.75rem;
+}
+header address {
+  font-family: "Intro", sans-serif;
+}
+header button {
+  aspect-ratio: 1;
+}
 
 main {
   background-image: url(../images/texture.png);
   background-size: 10vw;
+}
+
+.pointy-arrow-left {
+  -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
+          clip-path: polygon(100% 0, 0 50%, 100% 100%);
+}
+
+.pointy-arrow-right {
+  -webkit-clip-path: polygon(0 0, 100% 50%, 0 100%);
+          clip-path: polygon(0 0, 100% 50%, 0 100%);
 }/*# sourceMappingURL=globals.css.map */
