@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-  background-color: #f0f0f0;
+  font-family: "Minion Pro", serif;
 }
 
 header {
@@ -39,4 +39,39 @@ main {
 .pointy-arrow-right {
   -webkit-clip-path: polygon(0 0, 100% 50%, 0 100%);
           clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.tabs .tab-buttons {
+  border-bottom: 1px solid #c8c8c8;
+}
+.tabs .tab-buttons span {
+  font-family: "Intro", sans-serif;
+}
+
+#programs-details h6 {
+  font-family: "Intro", sans-serif;
+}
+
+#gallery {
+  background: url(../images/gallery.jpg) no-repeat center;
+  background-size: cover;
+}
+
+#testimonials-carrousel h6 {
+  font-family: "Intro", sans-serif;
+}
+
+#our-partners {
+  -webkit-backdrop-filter: brightness(0.95);
+          backdrop-filter: brightness(0.95);
+}
+
+footer {
+  background: url(../images/footer.jpg) no-repeat center;
+  background-size: cover;
+}
+
+#footer-info {
+  -webkit-backdrop-filter: brightness(0.5);
+          backdrop-filter: brightness(0.5);
 }/*# sourceMappingURL=globals.css.map */

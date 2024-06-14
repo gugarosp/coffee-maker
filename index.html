@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,29 +9,31 @@
     <link href="styles/bootstrap.min.css" rel="stylesheet">
     <link href="fonts/fonts.css" rel="stylesheet">
     <link href="styles/colors.css" rel="stylesheet">
-    <link href="styles/globals.css" rel="stylesheet">
     <link href="styles/headings.css" rel="stylesheet">
+    <link href="styles/forms.css" rel="stylesheet">
+    <link href="styles/globals.css" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/3972107aac.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+
     <header class="container-fluid h-100 d-flex flex-column">
         <nav class="row">
             <div class="col-12 d-flex justify-content-end gap-5">
                 <div class="d-inline-block me-auto">
-                    <a href="/"><img src="images/logo.png" alt="Coffee Maker"/></a>
+                    <a href="/"><img src="images/logo.png" alt="Coffee Maker" /></a>
                 </div>
                 <menu class="d-inline-flex align-items-center m-0 px-5">
-                    <li class="list-group-item"><a href="#" class="text-light text-decoration-none">program</a></li>
+                    <li class="list-group-item"><a href="#" class="text-light text-decoration-none">Program</a></li>
                     <li class="list-group-item"><span class="bg-white d-inline-block rounded-circle"></li>
-                    <li class="list-group-item"><a href="#" class="text-light text-decoration-none">gallery</a></li>
+                    <li class="list-group-item"><a href="#" class="text-light text-decoration-none">Gallery</a></li>
                     <li class="list-group-item"><span class="bg-white d-inline-block rounded-circle"></li>
-                    <li class="list-group-item"><a href="#" class="text-light text-decoration-none">reviews</a></li>
+                    <li class="list-group-item"><a href="#" class="text-light text-decoration-none">Reviews</a></li>
                     <li class="list-group-item"><span class="bg-white d-inline-block rounded-circle"></li>
-                    <li class="list-group-item"><a href="#" class="text-light text-decoration-none">partners</a></li>
+                    <li class="list-group-item"><a href="#" class="text-light text-decoration-none">Partners</a></li>
                     <li class="list-group-item"><span class="bg-white d-inline-block rounded-circle"></li>
-                    <li class="list-group-item"><a href="#" class="text-light text-decoration-none">contact</a></li>
+                    <li class="list-group-item"><a href="#" class="text-light text-decoration-none">Contact</a></li>
                 </menu>
                 <address class="d-inline-flex align-items-center h-100 m-0">
                     <a href="tel:+380996611730" class="text-light fs-5">+38 (099) 66-11-730</a>
@@ -50,33 +53,357 @@
             </div>
             <h1 class="text-light fs-1 mb-4">barista training in <span class="text-warning">amsterdam</span></h1>
             <h6 class="title-alternative text-light mb-4">On the basis of the company's largest coffee roasters</h5>
-            <div class="d-flex justify-content-center mb-4">
-                <div class="bg-warning pointy-arrow-left">.</div>
-                <div class="bg-warning">o</div>
-                <div class="bg-warning pointy-arrow-right">.</div>
-            </div>
-            <button type="button" class="btn btn-outline-light btn-lg rounded-circle"><i class="fa-solid fa-chevron-down text-warning"></i></button>
+                <div class="d-flex justify-content-center mb-4">
+                    <div class="bg-warning pointy-arrow-left">.</div>
+                    <div class="bg-warning">o</div>
+                    <div class="bg-warning pointy-arrow-right">.</div>
+                </div>
+                <button type="button" class="btn btn-outline-light btn-lg rounded-circle"><i
+                        class="fa-solid fa-chevron-down text-warning"></i></button>
         </div>
     </header>
     <main>
-        <section>
-            <h2 class="text-center text-dark fs-2">programs</h2>
+        <section class="container-fluid">
+            <div class="row">
+                <div class="d-flex justify-content-center align-items-center col-12">
+                    <i class="fa-solid fa-star"></i>
+                    <h2 class="text-center text-dark fs-1 m-0">Programs</h2>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-center col-12">We share their experience and professional barista championships multiple
+                    winners</p>
+                <div class="col-12">
+                    <div class="tabs">
+                        <ul class="tab-buttons d-flex justify-content-center">
+                            <li class="list-group-item">
+                                <span>Basic</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span>Premium</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span>Platinum</span>
+                            </li>
+                        </ul>
+                        <ul class="tab-content p-0">
+                            <li class="tab-content-item list-group-item d-flex">
+                                <div class="program-image">
+                                    <img src="images/program-basic.jpg">
+                                </div>
+                                <div class="program-info">
+                                    <h4 class="title-alternative">Beginners Course</h4>
+
+                                    <ul class="p-0">
+                                        <li class="list-group-item">
+                                            <i class="fa-solid fa-award"></i> certificate
+                                        </li>
+                                        <li class="list-group-item">
+                                            <i class="fa-solid fa-circle"></i> 240 minets
+                                        </li>
+                                    </ul>
+
+                                    <h3 class="title-alternative">1500 usd</h3>
+
+                                    <button class="btn btn-dark rounded-0">Registration</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="programs-details" class="row">
+                        <div class="col-4 d-flex align-items-end">
+                            <h6>Provenance coffee and basic concepts:</h6>
+                        </div>
+                        <div class="col-4 d-flex align-items-end">
+                            <h6>coffee production technology:</h6>
+                        </div>
+                        <div class="col-4 d-flex align-items-end">
+                            <h6>Roasting Technology bean. and Stage types of roasting.</h6>
+                        </div>
+                        <div class="col-4">
+                            <p>
+                                Legend of the origin of coffee. <br>
+                                - Chronicle of the spread of the coffee tree <br>
+                                - What is coffee? <br>
+                                - The structure of the coffee berry <br>
+                                - Arabica and Robusta <br>
+                                - Coffee Belt land <br>
+                                - Fruiting coffee tree <br>
+                                - Seven steps of the coffee plantation to the consumer <br>
+                                - Breeding and hybridization of coffee tree <br>
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <p>
+                                - Methods for collecting coffee berries <br>
+                                - Processing collected berries <br>
+                                - Calibration and sorting <br>
+                                - Some methods of classification and labeling of coffee beans. <br>
+                                - Formation of grade names. <br>
+                                - Storage of green (not fried) Coffee <br>
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <p>
+                                - The technology of roasting coffee beans. <br>
+                                - Changes in the beans. <br>
+                                - Stages and types of roasting. <br>
+                                - Roasted coffee. Monosorta and hood. <br>
+                                - Decaffeination of coffee <br>
+                                - Flavoring <br>
+                                - Storage roasted coffee <br>
+                            </p>
+                        </div>
+                        <div class="col-12">
+                            <h6>The course also includes:</h6>
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <td><i class="fa-solid fa-check text-success"></i></td>
+                                        <td>Coffee machine and grinder - practice - types of coffee machines and coffee
+                                            grinders</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-solid fa-check text-success"></i></td>
+                                        <td>What makes professional coffee machines and coffee grinders.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-solid fa-xmark text-danger"></i></td>
+                                        <td>Main components of coffee machines and coffee-Lathes, autolathes. Their
+                                            purpose</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-solid fa-xmark text-danger"></i></td>
+                                        <td>How to choose a coffee machine and coffee grinder</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-solid fa-xmark text-danger"></i></td>
+                                        <td>The structure of the machine. How to maintain, clean and customize coffee
+                                            machine</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-solid fa-xmark text-danger"></i></td>
+                                        <td>The structure of the grinders. How to maintain, clean and customize coffee
+                                            Molko</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-solid fa-check text-success"></i></td>
+                                        <td>Making beverages - praktika- machines and espresso rules</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-solid fa-xmark text-danger"></i></td>
+                                        <td>Technology and regulations frothed milk</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-solid fa-xmark text-danger"></i></td>
+                                        <td>Terms of tasting coffee</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-solid fa-xmark text-danger"></i></td>
+                                        <td>Terms of preparation of standard drinks line: espresso, cappuccino, latte
+                                            and others.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-solid fa-xmark text-danger"></i></td>
+                                        <td>Latte Art - Features practice and the importance of Latte Art in business
+                                            and the barista</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-solid fa-xmark text-danger"></i></td>
+                                        <td>1 views Latte Art - Pitching</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-solid fa-xmark text-danger"></i></td>
+                                        <td>2 views Latte Art - topping</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-solid fa-xmark text-danger"></i></td>
+                                        <td>3 views Latte Art - Etching</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-solid fa-xmark text-danger"></i></td>
+                                        <td>4 views Latte Art - chocolate chip stencils</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
-        <section>
-            <h2 class="text-center text-light fs-2">gallery</h2>
+        <section id="gallery" class="container-fluid">
+            <div class="row">
+                <div class="d-flex justify-content-center align-items-center col-12">
+                    <i class="fa-solid fa-bars-staggered text-light"></i>
+                    <i class="fa-solid fa-bars text-light"></i>
+                    <h2 class="text-center text-light fs-1 m-0">Gallery</h2>
+                    <i class="fa-solid fa-bars text-light"></i>
+                    <i class="fa-solid fa-bars-staggered text-light"></i>
+                </div>
+                <p class="text-center text-light col-12">
+                    You yourself are testing the taste benefits of each method <br>
+                    and select the type of cooking yourself
+                </p>
+            </div>
+            <div id="gallery-images">
+                <img src="images/program-basic.jpg">
+                <img src="images/program-basic.jpg">
+                <img src="images/program-basic.jpg">
+            </div>
+            <div id="gallery-pagination" class="d-flex justify-content-center text-light">
+                5 of 10
+            </div>
         </section>
-        <section>
-            <h2 class="text-center text-dark fs-2">testimonials</h2>
+        <section class="container-fluid">
+            <div class="row">
+                <div class="d-flex justify-content-center align-items-center col-12">
+                    <h2 class="text-center text-dark fs-1 m-0">Testimonials</h2>
+                </div>
+                <p class="text-center col-12">
+                    We have enough patience to teach you the art of coffee
+                </p>
+            </div>
+
+            <div id="testimonials-carrousel">
+                <div id="testimonials-carrousel-content">
+                    <div class="testimonials-carrousel-item">
+                        <img src="images/program-basic.jpg" width="100">
+
+                        <h6>Alex Nikandrov</h6>
+
+                        <p>Our company is grateful for the delicious and freshly roasted coffee in our office every day!
+                            Our
+                            staff of more than 300 people, appreciate quality and flavor of the coffee, because that
+                            would
+                            be important for our office staff were every morning refreshed and in a good mood!
+                            Recommended!
+                        </p>
+                    </div>
+                </div>
+                <div id="testimonials-carrousel-pagination">
+                    ...
+                </div>
+            </div>
+
         </section>
-        <section>
-            <h2 class="text-center text-dark fs-2">our partners</h2>
+        <section id="our-partners" class="container-fluid">
+            <div class="row">
+                <div class="d-flex justify-content-center align-items-center col-12">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                    <i class="fa-solid fa-bars"></i>
+                    <h2 class="text-center text-dark fs-1">Our Partners</h2>
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div id="partners-carrousel">
+                        <img src="images/partner-klass.png">
+                        <img src="images/partner-klass.png">
+                        <img src="images/partner-klass.png">
+                        <img src="images/partner-klass.png">
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2 class="text-center text-dark fs-2">have questions?</h2>
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-8 offset-md-4">
+                    <h2 class="text-dark fs-1">Have questions?</h2>
+
+                    <p>Leave a request and we will contact you shortly</p>
+
+                    <form>
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="text" placeholder="Your Name">
+                                <input type="tel" placeholder="Contact Number">
+                            </div>
+                            <div class="col-6">
+                                <input type="submit" value="Registration">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <h2 class="text-center text-light fs-2">professional school barista</h2>
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center text-light fs-1">Professional School <br> Barista</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <p class="text-light">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
+                    error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                    inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+                    voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+                    qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                    amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                    dolore magnam aliquam quaerat voluptatem.
+                </p>
+            </div>
+            <div class="col-6">
+                <p class="text-light">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
+                    error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                    inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+                    voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+                    qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                    amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                    dolore magnam aliquam quaerat voluptatem.
+                </p>
+            </div>
+        </div>
+        <div id="footer-info" class="row text-center">
+            <div class="col-12">
+                <menu class="d-inline-flex align-items-center m-0 px-5">
+                    <li class="list-group-item"><a href="#" class="text-light text-decoration-none">Program</a></li>
+                    <li class="list-group-item"><span class="bg-white d-inline-block rounded-circle"></li>
+                    <li class="list-group-item"><a href="#" class="text-light text-decoration-none">Gallery</a></li>
+                    <li class="list-group-item"><span class="bg-white d-inline-block rounded-circle"></li>
+                    <li class="list-group-item"><a href="#" class="text-light text-decoration-none">Reviews</a></li>
+                    <li class="list-group-item"><span class="bg-white d-inline-block rounded-circle"></li>
+                    <li class="list-group-item"><a href="#" class="text-light text-decoration-none">Partners</a></li>
+                    <li class="list-group-item"><span class="bg-white d-inline-block rounded-circle"></li>
+                    <li class="list-group-item"><a href="#" class="text-light text-decoration-none">Contact</a></li>
+                </menu>
+            </div>
+            <div class="col-4 text-light">
+                phone
+            </div>
+            <div class="col-4 text-light">
+                location
+            </div>
+            <div class="col-4 text-light">
+                mail
+            </div>
+            <div class="col-4 text-light">
+                +38 000 000 000
+            </div>
+            <div class="col-4 text-light">
+                Ukraine, 61002
+            </div>
+            <div class="col-4 text-light">
+                hello@.com
+            </div>
+            <div class="col-12 text-light">
+                © Copyright 2017 . All Rights Reserved. | site template by  NIKANDROV.PRO
+            </div>
+        </div>
     </footer>
 </body>
+
 </html>
