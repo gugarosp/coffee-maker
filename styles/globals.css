@@ -4,6 +4,7 @@ html, body {
 
 body {
   font-family: "Minion Pro", serif;
+  font-size: 14px;
 }
 
 header {
@@ -30,25 +31,22 @@ main {
   background-image: url(../images/texture.png);
   background-size: 10vw;
 }
-
-.pointy-arrow-left {
+main .pointy-arrow-left {
   -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
           clip-path: polygon(100% 0, 0 50%, 100% 100%);
 }
-
-.pointy-arrow-right {
+main .pointy-arrow-right {
   -webkit-clip-path: polygon(0 0, 100% 50%, 0 100%);
           clip-path: polygon(0 0, 100% 50%, 0 100%);
 }
 
-.tabs .tab-buttons {
+#programs .tabs .tab-buttons {
   border-bottom: 1px solid #c8c8c8;
 }
-.tabs .tab-buttons span {
+#programs .tabs .tab-buttons span {
   font-family: "Intro", sans-serif;
 }
-
-#programs-details h6 {
+#programs #programs-details h6 {
   font-family: "Intro", sans-serif;
 }
 
@@ -57,7 +55,7 @@ main {
   background-size: cover;
 }
 
-#testimonials-carrousel h6 {
+#testimonials #testimonials-carrousel h6 {
   font-family: "Intro", sans-serif;
 }
 
@@ -70,8 +68,7 @@ footer {
   background: url(../images/footer.jpg) no-repeat center;
   background-size: cover;
 }
-
-#footer-info {
+footer #footer-info {
   -webkit-backdrop-filter: brightness(0.5);
           backdrop-filter: brightness(0.5);
 }/*# sourceMappingURL=globals.css.map */
