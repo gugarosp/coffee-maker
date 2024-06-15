@@ -153,6 +153,28 @@ main {
   background: url(../images/gallery.jpg) no-repeat center;
   background-size: cover;
 }
+#gallery::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-top: -1px;
+  background: url(../images/painted-detail.png) no-repeat bottom;
+  background-size: contain;
+  rotate: 180deg;
+  pointer-events: none;
+}
+#gallery::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  background: url(../images/painted-detail.png) no-repeat bottom;
+  background-size: contain;
+  rotate: 0deg;
+  pointer-events: none;
+}
 #gallery #gallery-title .gallerty-title-details {
   transform: scale(1.25, 0.75);
 }
@@ -195,6 +217,9 @@ main {
      object-fit: contain;
 }
 
+#have-questions {
+  min-height: 560px;
+}
 #have-questions .thin-arrow {
   rotate: 180deg;
 }
@@ -202,6 +227,17 @@ main {
 footer {
   background: url(../images/footer.jpg) no-repeat center;
   background-size: cover;
+}
+footer::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-top: -1px;
+  background: url(../images/painted-detail.png) no-repeat bottom;
+  background-size: contain;
+  rotate: 180deg;
+  pointer-events: none;
 }
 footer p {
   text-align: justify;

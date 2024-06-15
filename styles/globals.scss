@@ -207,9 +207,35 @@ main {
 }
 
 // GALLERY
+@mixin paintedDetail ($rotation) {
+
+    $position: "::after";
+    $marginTop: 0;
+
+    @if ($rotation == 180deg) {
+        $position: "::before";
+        $marginTop: -1px;
+    }
+    
+    &#{$position} {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin-top: $marginTop;
+        background: url(../images/painted-detail.png) no-repeat bottom;
+        background-size: contain;
+        rotate: $rotation;
+        pointer-events: none;
+    }
+}
+
 #gallery {
     background: url(../images/gallery.jpg) no-repeat center;
     background-size: cover;
+
+    @include paintedDetail (180deg);
+    @include paintedDetail (0deg);
 
     #gallery-title {
 
@@ -276,6 +302,7 @@ main {
 
 // HAVE QUESTIONS
 #have-questions {
+    min-height: 560px;
 
     .thin-arrow {
         rotate: 180deg;
@@ -287,6 +314,8 @@ main {
 footer {
     background: url(../images/footer.jpg) no-repeat center;
     background-size: cover;
+
+    @include paintedDetail (180deg);
 
     p {
         text-align: justify;
