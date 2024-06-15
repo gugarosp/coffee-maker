@@ -450,12 +450,12 @@
                     </div>
 
                     <form>
-                        <div class="row">
+                        <div class="row mb-5">
                             <div class="col-6">
                                 <input type="text" placeholder="Your Name" class="form-control rounded-0 radius-0 border-0 border-bottom border-dark bg-transparent px-0 py-2 mb-4">
                                 <input type="tel" placeholder="Contact Number" class="form-control rounded-0 radius-0 border-0 border-bottom border-dark bg-transparent px-0 py-2">
                             </div>
-                            <div class="col-5 offset-md-1">
+                            <div class="col-5 offset-md-1 d-flex flex-column justify-content-end">
                                 <div class="d-flex">
                                     <button class="btn btn-outline-dark btn-sm px-5 py-3 text-uppercase rounded-0"><span class="px-4">Send</span></button>
                                     <div class="thin-arrow d-flex flex-column justify-content-center">
@@ -473,14 +473,15 @@
     </main>
 
     <footer class="container-fluid d-flex flex-column align-items-center">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="text-center text-light fs-1">Professional School <br> Barista</h2>
+        <div class="row mb-3">
+            <div class="d-flex justify-content-center align-items-center col-12 mt-5 mb-4 gap-3">
+                <h2 class="text-center text-light fs-1 m-0">Professional School <br> Barista</h2>
             </div>
         </div>
-        <div class="row">
+
+        <div class="row mb-5">
             <div class="col-6">
-                <p class="text-light">
+                <p class="text-light pe-2">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -495,7 +496,7 @@
                 </p>
             </div>
             <div class="col-6">
-                <p class="text-light">
+                <p class="text-light ps-2">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -511,39 +512,54 @@
             </div>
         </div>
         <div id="footer-info" class="row text-center">
-            <div class="col-12">
-                <menu class="d-inline-flex align-items-center m-0 px-5">
-                    <li class="list-group-item"><a href="#" class="text-light text-decoration-none">Program</a></li>
-                    <li class="list-group-item"><span class="bg-white d-inline-block rounded-circle"></li>
-                    <li class="list-group-item"><a href="#" class="text-light text-decoration-none">Gallery</a></li>
-                    <li class="list-group-item"><span class="bg-white d-inline-block rounded-circle"></li>
-                    <li class="list-group-item"><a href="#" class="text-light text-decoration-none">Reviews</a></li>
-                    <li class="list-group-item"><span class="bg-white d-inline-block rounded-circle"></li>
-                    <li class="list-group-item"><a href="#" class="text-light text-decoration-none">Partners</a></li>
-                    <li class="list-group-item"><span class="bg-white d-inline-block rounded-circle"></li>
-                    <li class="list-group-item"><a href="#" class="text-light text-decoration-none">Contact</a></li>
+            <div id="footer-links" class="col-12 d-flex justify-content-center gap-5 position-relative p-4">
+                <menu class="d-inline-flex m-0 ps-0 my-2 gap-4">
+                    <li class="list-group-item">
+                        <a href="#" class="d-flex align-items-center h-100 p-2 text-decoration-none">Program</a>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center h-100">
+                        <i class="fa-solid fa-circle text-light"></i>
+                    </li><li class="list-group-item">
+                        <a href="#" class="d-flex align-items-center h-100 p-2 text-decoration-none">Gallery</a>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center h-100">
+                        <i class="fa-solid fa-circle text-light"></i>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" class="d-flex align-items-center h-100 p-2 text-decoration-none">Testimonials</a>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center h-100">
+                        <i class="fa-solid fa-circle text-light"></i>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" class="d-flex align-items-center h-100 p-2 text-decoration-none">Contact</a>
+                    </li>
                 </menu>
             </div>
-            <div class="col-4 text-light">
-                phone
+            <div class="footer-icons col-4 text-light px-2 py-4">
+                <i class="fa-solid fa-phone fs-2"></i>
             </div>
-            <div class="col-4 text-light">
-                location
+            <div class="footer-icons col-4 text-light px-2 py-4">
+                <i class="fa-solid fa-location-dot fs-2"></i>
             </div>
-            <div class="col-4 text-light">
-                mail
+            <div class="footer-icons col-4 text-light px-2 py-4">
+                <i class="fa-solid fa-envelope fs-2"></i>
             </div>
-            <div class="col-4 text-light">
+            <div class="footer-contact-info col-4 text-light px-2 py-4">
                 +38 000 000 000
             </div>
-            <div class="col-4 text-light">
+            <div class="footer-contact-info col-4 text-light px-2 py-4">
                 Ukraine, 61002
             </div>
-            <div class="col-4 text-light">
+            <div class="footer-contact-info col-4 text-light px-2 py-4">
                 hello@.com
             </div>
-            <div class="col-12 text-light">
-                © Copyright 2017 . All Rights Reserved. | site template by NIKANDROV.PRO
+        </div>
+        <div class="row my-5">
+            <div class="col-12 d-flex justify-content-center text-light gap-3">
+                <span>© Copyright 2017 . All Rights Reserved.</span>
+                <span class="border border-left border-light"></span>
+                <span id="footer-template-author">site template by NIKANDROV.PRO</span>
             </div>
         </div>
     </footer>

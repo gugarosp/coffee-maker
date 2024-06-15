@@ -28,25 +28,6 @@ header #logo-container {
 header #logo {
   width: 200px;
 }
-header menu span {
-  aspect-ratio: 1;
-  width: 4px;
-  align-self: flex-start;
-}
-header menu a {
-  font-family: "Intro", sans-serif;
-  font-size: 0.625rem;
-  letter-spacing: 0.025rem;
-  color: rgba(var(--bs-light-rgb));
-  transition: color 0.5s, box-shadow 0.5s;
-}
-header menu a:hover {
-  color: rgb(var(--bs-warning-rgb));
-  box-shadow: inset 0px -2px 0px 0px rgb(var(--bs-warning-rgb));
-}
-header menu i {
-  font-size: 0.25rem;
-}
 header address {
   font-family: "Intro", sans-serif;
 }
@@ -97,6 +78,26 @@ header button i {
   position: relative;
   top: 1px;
   font-size: 1rem;
+}
+
+menu span {
+  aspect-ratio: 1;
+  width: 4px;
+  align-self: flex-start;
+}
+menu a {
+  font-family: "Intro", sans-serif;
+  font-size: 0.625rem;
+  letter-spacing: 0.025rem;
+  color: rgba(var(--bs-light-rgb));
+  transition: color 0.5s, box-shadow 0.5s;
+}
+menu a:hover {
+  color: rgb(var(--bs-warning-rgb));
+  box-shadow: inset 0px -2px 0px 0px rgb(var(--bs-warning-rgb));
+}
+menu i {
+  font-size: 0.25rem;
 }
 
 main {
@@ -202,9 +203,35 @@ footer {
   background: url(../images/footer.jpg) no-repeat center;
   background-size: cover;
 }
+footer p {
+  text-align: justify;
+}
 footer #footer-info {
+  font-size: 0.75rem;
   -webkit-backdrop-filter: brightness(0.5);
           backdrop-filter: brightness(0.5);
+  border: 1px solid rgba(255, 255, 255, 0.3137254902);
+}
+footer #footer-info :not(i) {
+  font-family: "Intro", sans-serif;
+}
+footer #footer-info #footer-links {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3137254902);
+}
+footer #footer-info .footer-icons {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1450980392);
+}
+footer #footer-info .footer-icons:nth-of-type(3) {
+  border-left: 1px solid rgba(255, 255, 255, 0.1450980392);
+  border-right: 1px solid rgba(255, 255, 255, 0.1450980392);
+}
+footer #footer-info .footer-contact-info:nth-of-type(6) {
+  border-left: 1px solid rgba(255, 255, 255, 0.1450980392);
+  border-right: 1px solid rgba(255, 255, 255, 0.1450980392);
+}
+footer #footer-template-author {
+  font-family: "Intro", sans-serif;
+  font-size: 0.75rem;
 }
 
 .carrousel .carrousel-pagination .carrousel-page-active i {

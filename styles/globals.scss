@@ -44,32 +44,6 @@ header {
         width: $logoWidth;
     }
 
-    menu {
-
-        span {
-            aspect-ratio: 1;
-            width: 4px;
-            align-self: flex-start;
-        }
-
-        a {
-            @include fontFamilyIntro;
-            font-size: .625rem;
-            letter-spacing: .025rem;
-            color: rgba(var(--bs-light-rgb));
-            transition: color .5s, box-shadow .5s;
-
-            &:hover {
-                color: rgb(var(--bs-warning-rgb));
-                box-shadow: inset 0px -2px 0px 0px rgb(var(--bs-warning-rgb));
-            }
-        }
-
-        i {
-            font-size: .25rem;
-        }
-    }
-
     address {
         @include fontFamilyIntro;
     }
@@ -132,6 +106,33 @@ header {
         }
     }
     
+}
+
+// MENU
+menu {
+
+    span {
+        aspect-ratio: 1;
+        width: 4px;
+        align-self: flex-start;
+    }
+
+    a {
+        @include fontFamilyIntro;
+        font-size: .625rem;
+        letter-spacing: .025rem;
+        color: rgba(var(--bs-light-rgb));
+        transition: color .5s, box-shadow .5s;
+
+        &:hover {
+            color: rgb(var(--bs-warning-rgb));
+            box-shadow: inset 0px -2px 0px 0px rgb(var(--bs-warning-rgb));
+        }
+    }
+
+    i {
+        font-size: .25rem;
+    }
 }
 
 // MAIN
@@ -286,9 +287,49 @@ main {
 footer {
     background: url(../images/footer.jpg) no-repeat center;
     background-size: cover;
+
+    p {
+        text-align: justify;
+    }
     
     #footer-info {
+        font-size: .75rem;
         backdrop-filter: brightness(0.5);
+        border: 1px solid #ffffff50;
+
+        :not(i) {
+            @include fontFamilyIntro;
+        }
+
+        #footer-links {
+            border-bottom: 1px solid #ffffff50;
+        }
+
+        @mixin footerInfoSideBorders {
+            border-left: 1px solid #ffffff25;
+            border-right: 1px solid #ffffff25;
+        }
+
+        .footer-icons {
+            border-bottom: 1px solid #ffffff25;
+
+            &:nth-of-type(3) {
+                @include footerInfoSideBorders;
+            }
+        }
+
+        .footer-contact-info {
+
+            &:nth-of-type(6) {
+                @include footerInfoSideBorders;
+            }
+        }
+
+    }
+
+    #footer-template-author {
+        @include fontFamilyIntro;
+        font-size: 0.75rem;
     }
 }
 
