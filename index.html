@@ -324,8 +324,8 @@
         </section>
 
         <section id="testimonials" class="container-fluid d-flex flex-column align-items-center">
-            <div class="row mt-5 mb-4">
-                <div class="d-flex justify-content-center align-items-center col-12">
+            <div class="row">
+                <div class="d-flex justify-content-center align-items-center col-12 mt-5 mb-4">
                     <h2 class="text-center text-dark fs-1 m-0">Testimonials</h2>
                 </div>
                 <p class="text-center col-12">
@@ -333,24 +333,44 @@
                 </p>
             </div>
 
-            <div id="testimonials-carrousel" class="row">
-                <div id="testimonials-carrousel-content" class="col-12">
-                    <div class="testimonials-carrousel-item">
-                        <img src="images/program-basic.jpg" width="100">
-
-                        <h6>Alex Nikandrov</h6>
-
-                        <p>Our company is grateful for the delicious and freshly roasted coffee in our office every day!
-                            Our
-                            staff of more than 300 people, appreciate quality and flavor of the coffee, because that
-                            would
-                            be important for our office staff were every morning refreshed and in a good mood!
-                            Recommended!
-                        </p>
-                    </div>
+            <div id="testimonials-carrousel" class="row mt-5">
+                <div class="col-12">
+                    <div class="d-flex gap-3">
+                        <div class="testimonials-carrousel-page-arrow">
+                            <button class="btn p-3">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                        </div>
+                        <div class="w-100">
+                            <div class="testimonials-carrousel-item text-center">
+                                <div class="pb-2">
+                                    <img class="testimonials-photo rounded-circle" src="images/program-basic.jpg">
+                                </div>
+    
+                                <h6 class="my-4">Alex Nikandrov</h6>
+    
+                                <p class="lh-lg">Our company is grateful for the delicious and freshly roasted coffee in our office every day!
+                                    Our
+                                    staff of more than 300 people, appreciate quality and flavor of the coffee, because that
+                                    would
+                                    be important for our office staff were every morning refreshed and in a good mood!
+                                    Recommended!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="testimonials-carrousel-page-arrow">
+                            <button class="btn p-3">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        
                 </div>
-                <div id="testimonials-carrousel-pagination">
-                    ...
+                <div id="testimonials-carrousel-pagination" class="d-flex justify-content-center gap-1 mb-5 pb-1">
+                    <button class="btn p-1 testimonials-carrousel-page-active"><i class="fa-solid fa-circle"></i></button>
+                    <button class="btn p-1"><i class="fa-solid fa-circle"></i></button>
+                    <button class="btn p-1"><i class="fa-solid fa-circle"></i></button>
+                    <button class="btn p-1"><i class="fa-solid fa-circle"></i></button>
+                    <button class="btn p-1"><i class="fa-solid fa-circle"></i></button>
                 </div>
             </div>
 
