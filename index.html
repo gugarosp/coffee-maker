@@ -151,17 +151,17 @@
                     </div>
                     <div id="programs-details" class="row pt-4">
                         <div class="col-4 pe-5">
-                            <div class="d-flex align-items-end h-100 border-top border-dark pt-4">
+                            <div class="d-flex align-items-end h-100 border-top border-dark pt-3">
                                 <h6 class="lh-base">Provenance coffee and basic concepts:</h6>
                             </div>
                         </div>
                         <div class="col-4 px-4">
-                            <div class="d-flex align-items-end h-100 border-top border-dark pt-4">
+                            <div class="d-flex align-items-end h-100 border-top border-dark pt-3">
                                 <h6 class="lh-base">Coffee production technology:</h6>
                             </div>
                         </div>
                         <div class="col-4 ps-5">
-                            <div class="d-flex align-items-end h-100 border-top border-dark pt-4">
+                            <div class="d-flex align-items-end h-100 border-top border-dark pt-3">
                                 <h6 class="lh-base">Roasting Technology bean. and Stage types of roasting.</h6>
                             </div>
                         </div>
@@ -333,37 +333,39 @@
                 </p>
             </div>
 
-            <div class="carrousel" class="row mt-5">
-                <div class="col-12">
+            <div class="carrousel row mt-5 w-100">
+                <div class="col-12 mb-4">
                     <div class="d-flex gap-3">
-                        <div class="carrousel-page-arrow">
-                            <button class="btn p-3">
+                        <div class="d-flex">
+                            <button class="btn p-3 align-self-center">
                                 <i class="fa-solid fa-chevron-left"></i>
                             </button>
                         </div>
-                        <div class="w-100">
-                            <div class="carrousel-item text-center">
-                                <div class="pb-2">
-                                    <img class="testimonials-photo rounded-circle" src="images/program-basic.jpg">
+                        <div class="w-100 d-flex">
+                            <div class="carrousel-item align-self-center">
+                                <div class="text-center">
+                                    <div class="pb-2">
+                                        <img class="testimonials-photo rounded-circle" src="images/program-basic.jpg">
+                                    </div>
+    
+                                    <h6 class="my-4">Alex Nikandrov</h6>
+        
+                                    <p class="lh-lg mb-0">Our company is grateful for the delicious and freshly roasted coffee in our office every day!
+                                        Our
+                                        staff of more than 300 people, appreciate quality and flavor of the coffee, because that
+                                        would
+                                        be important for our office staff were every morning refreshed and in a good mood!
+                                        Recommended!
+                                    </p>
                                 </div>
-    
-                                <h6 class="my-4">Alex Nikandrov</h6>
-    
-                                <p class="lh-lg">Our company is grateful for the delicious and freshly roasted coffee in our office every day!
-                                    Our
-                                    staff of more than 300 people, appreciate quality and flavor of the coffee, because that
-                                    would
-                                    be important for our office staff were every morning refreshed and in a good mood!
-                                    Recommended!
-                                </p>
                             </div>
                         </div>
-                        <div class="carrousel-page-arrow">
-                            <button class="btn p-3">
+                        <div class="d-flex">
+                            <button class="btn p-3 align-self-center">
                                 <i class="fa-solid fa-chevron-right"></i>
                             </button>
                         </div>
-                        
+                    </div>
                 </div>
                 <div class="carrousel-pagination d-flex justify-content-center gap-1 mb-5 pb-1">
                     <button class="btn p-1 carrousel-page-active"><i class="fa-solid fa-circle"></i></button>
@@ -389,15 +391,45 @@
                         <i class="fa-solid fa-bars-staggered text-dark position-relative" aria-hidden="true"></i>
                     </div>
                 </div>
-
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <div id="partners-carrousel">
-                        <img src="images/partner-klass.png">
-                        <img src="images/partner-klass.png">
-                        <img src="images/partner-klass.png">
-                        <img src="images/partner-klass.png">
+
+            <div class="carrousel row my-5 pb-3 w-100">
+                <div class="col-12 mb-4">
+                    <div class="d-flex gap-3">
+                        <div class="d-flex">
+                            <button class="btn p-3 align-self-center">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                        </div>
+                        <div class="w-100 d-flex">
+                            <div class="carrousel-item align-self-center">
+                                <div class="row">
+                                    <div class="col-2 text-center">
+                                        <img src="images/partner-abajour.png">
+                                    </div>
+                                    <div class="col-2 text-center">
+                                        <img src="images/partner-altbee.png">
+                                    </div>
+                                    <div class="col-2 text-center">
+                                        <img src="images/partner-dedushka.png">
+                                    </div>
+                                    <div class="col-2 text-center">
+                                        <img src="images/partner-gdeburger.png">
+                                    </div>
+                                    <div class="col-2 text-center">
+                                        <img src="images/partner-baden-baden.png">
+                                    </div>
+                                    <div class="col-2 text-center">
+                                        <img src="images/partner-klass.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <button class="btn p-3 align-self-center">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -406,9 +438,14 @@
         <section id="have-questions" class="container-fluid d-flex flex-column align-items-center">
             <div class="row">
                 <div class="col-8 offset-md-4">
-                    <h2 class="text-dark fs-1">Have questions?</h2>
-
-                    <p>Leave a request and we will contact you shortly</p>
+                    <div class="row">
+                        <div class="col-12 mt-5 mb-4">
+                            <h2 class="text-dark fs-1 m-0">Have questions?</h2>
+                        </div>
+                        <p class="col-12">
+                            Leave a request and we will contact you shortly
+                        </p>
+                    </div>
 
                     <form>
                         <div class="row">

@@ -205,10 +205,20 @@ main {
   -o-object-fit: cover;
      object-fit: cover;
 }
+#testimonials h6 {
+  font-family: "Intro", sans-serif;
+  letter-spacing: -0.0825rem;
+}
 
 #our-partners {
   -webkit-backdrop-filter: brightness(0.95);
           backdrop-filter: brightness(0.95);
+}
+#our-partners img {
+  width: 60%;
+  aspect-ratio: 1/0.6;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 footer {
@@ -220,13 +230,6 @@ footer #footer-info {
           backdrop-filter: brightness(0.5);
 }
 
-.carrousel .carrousel-page-arrow {
-  margin-top: 194px;
-}
-.carrousel h6 {
-  font-family: "Intro", sans-serif;
-  letter-spacing: -0.0825rem;
-}
 .carrousel .carrousel-pagination .carrousel-page-active i {
   color: rgb(var(--bs-warning-rgb));
 }
