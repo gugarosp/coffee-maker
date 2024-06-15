@@ -199,24 +199,11 @@ main {
   margin-left: -35px;
 }
 
-#testimonials #testimonials-carrousel .testimonials-carrousel-page-arrow {
-  margin-top: 194px;
-}
-#testimonials #testimonials-carrousel .testimonials-carrousel-item .testimonials-photo {
+#testimonials .testimonials-photo {
   width: 180px;
   aspect-ratio: 1;
   -o-object-fit: cover;
      object-fit: cover;
-}
-#testimonials #testimonials-carrousel h6 {
-  font-family: "Intro", sans-serif;
-  letter-spacing: -0.0825rem;
-}
-#testimonials #testimonials-carrousel #testimonials-carrousel-pagination .testimonials-carrousel-page-active i {
-  color: rgb(var(--bs-warning-rgb));
-}
-#testimonials #testimonials-carrousel #testimonials-carrousel-pagination i {
-  font-size: 0.625rem;
 }
 
 #our-partners {
@@ -231,4 +218,18 @@ footer {
 footer #footer-info {
   -webkit-backdrop-filter: brightness(0.5);
           backdrop-filter: brightness(0.5);
+}
+
+.carrousel .carrousel-page-arrow {
+  margin-top: 194px;
+}
+.carrousel h6 {
+  font-family: "Intro", sans-serif;
+  letter-spacing: -0.0825rem;
+}
+.carrousel .carrousel-pagination .carrousel-page-active i {
+  color: rgb(var(--bs-warning-rgb));
+}
+.carrousel .carrousel-pagination i {
+  font-size: 0.625rem;
 }/*# sourceMappingURL=globals.css.map */
