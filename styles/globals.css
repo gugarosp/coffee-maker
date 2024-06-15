@@ -171,33 +171,6 @@ main {
   width: 60px;
   aspect-ratio: 1;
 }
-#gallery #gallery-pagination .thin-arrow {
-  width: 80px;
-  pointer-events: none;
-}
-#gallery #gallery-pagination .thin-arrow span:first-child,
-#gallery #gallery-pagination .thin-arrow span:last-child {
-  width: 15px;
-}
-#gallery #gallery-pagination .thin-arrow span:first-child {
-  top: 1px;
-  transform: rotate(-45deg);
-  transform-origin: 0 100%;
-}
-#gallery #gallery-pagination .thin-arrow span:last-child {
-  top: -1px;
-  transform: rotate(45deg);
-  transform-origin: 0;
-}
-#gallery #gallery-pagination .thin-arrow:first-child {
-  rotate: 180deg;
-}
-#gallery #gallery-pagination button + .thin-arrow {
-  margin-left: -35px;
-}
-#gallery #gallery-pagination .thin-arrow + button {
-  margin-left: -35px;
-}
 
 #testimonials .testimonials-photo {
   width: 180px;
@@ -221,6 +194,10 @@ main {
      object-fit: contain;
 }
 
+#have-questions .thin-arrow {
+  rotate: 180deg;
+}
+
 footer {
   background: url(../images/footer.jpg) no-repeat center;
   background-size: cover;
@@ -235,4 +212,38 @@ footer #footer-info {
 }
 .carrousel .carrousel-pagination i {
   font-size: 0.625rem;
+}
+
+.thin-arrow {
+  width: 80px;
+  pointer-events: none;
+}
+.thin-arrow span:first-child,
+.thin-arrow span:last-child {
+  width: 15px;
+}
+.thin-arrow span:first-child {
+  top: 1px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+.thin-arrow span:last-child {
+  top: -1px;
+  transform: rotate(45deg);
+  transform-origin: 0;
+}
+.thin-arrow:first-child {
+  rotate: 180deg;
+}
+
+button + .thin-arrow {
+  margin-left: -35px;
+}
+
+.thin-arrow + button {
+  margin-left: -35px;
+}
+
+.btn {
+  font-family: "Intro", sans-serif;
 }/*# sourceMappingURL=globals.css.map */

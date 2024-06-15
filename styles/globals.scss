@@ -244,42 +244,6 @@ main {
             aspect-ratio: 1;
         }
 
-        .thin-arrow {
-            
-            width: 80px;
-            pointer-events: none;
-
-            span:first-child,
-            span:last-child {
-                width: 15px;
-            }
-
-            span:first-child {
-                top: 1px;
-                transform: rotate(-45deg);
-                transform-origin: 0 100%;
-            }
-
-            span:last-child {
-                top: -1px;
-                transform: rotate(45deg);
-                transform-origin: 0;
-            }
-
-            &:first-child {
-                rotate: 180deg;
-            }
-
-        }
-
-        button + .thin-arrow {
-            margin-left: -35px;
-        }
-
-        .thin-arrow + button {
-            margin-left: -35px;
-        }
-
     }
 }
 
@@ -307,6 +271,15 @@ main {
         aspect-ratio: 1/.6;
         object-fit: contain;
     }
+}
+
+// HAVE QUESTIONS
+#have-questions {
+
+    .thin-arrow {
+        rotate: 180deg;
+    }
+
 }
 
 // FOOTER
@@ -337,4 +310,46 @@ footer {
         }
 
     }
+}
+
+// THIN ARROW
+.thin-arrow {
+            
+    width: 80px;
+    pointer-events: none;
+
+    span:first-child,
+    span:last-child {
+        width: 15px;
+    }
+
+    span:first-child {
+        top: 1px;
+        transform: rotate(-45deg);
+        transform-origin: 0 100%;
+    }
+
+    span:last-child {
+        top: -1px;
+        transform: rotate(45deg);
+        transform-origin: 0;
+    }
+
+    &:first-child {
+        rotate: 180deg;
+    }
+
+}
+
+button + .thin-arrow {
+    margin-left: -35px;
+}
+
+.thin-arrow + button {
+    margin-left: -35px;
+}
+
+// BUTTONS
+.btn {
+    @include fontFamilyIntro;
 }

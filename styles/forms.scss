@@ -1,3 +1,8 @@
-input {
+.form-control {
     font-family: 'Intro', sans-serif;
+
+    &:focus {
+        outline: 0;
+        box-shadow: none;
+    }
 }
