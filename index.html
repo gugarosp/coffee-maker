@@ -277,32 +277,54 @@
             </div>
         </section>
 
-        <section id="gallery" class="container-fluid d-flex flex-column align-items-center">
-            <div class="row">
-                <div class="d-flex justify-content-center align-items-center col-12">
-                    <i class="fa-solid fa-bars-staggered text-light"></i>
-                    <i class="fa-solid fa-bars text-light"></i>
+        <section id="gallery" class="container-fluid d-flex flex-column align-items-center overflow-hidden">
+            <div id="gallery-title" class="row mb-2">
+                <div class="d-flex justify-content-center align-items-center col-12 mt-5 mb-4 gap-3">
+                    <div class="gallerty-title-details d-flex">
+                        <i class="fa-solid fa-bars-staggered text-light position-relative"></i>
+                        <i class="fa-solid fa-bars text-light"></i>
+                    </div>
                     <h2 class="text-center text-light fs-1 m-0">Gallery</h2>
-                    <i class="fa-solid fa-bars text-light"></i>
-                    <i class="fa-solid fa-bars-staggered text-light"></i>
+                    <div class="gallerty-title-details d-flex">
+                        <i class="fa-solid fa-bars text-light"></i>
+                        <i class="fa-solid fa-bars-staggered text-light position-relative"></i>
+                    </div>
                 </div>
                 <p class="text-center text-light col-12">
                     You yourself are testing the taste benefits of each method <br>
                     and select the type of cooking yourself
                 </p>
             </div>
-            <div id="gallery-images">
+            <div id="gallery-images" class="d-flex gap-4 mt-4 w-100">
                 <img src="images/program-basic.jpg">
                 <img src="images/program-basic.jpg">
                 <img src="images/program-basic.jpg">
             </div>
-            <div id="gallery-pagination" class="d-flex justify-content-center text-light">
-                5 of 10
+            <div id="gallery-pagination" class="d-flex justify-content-center gap-5 my-5 text-light">
+                <div class="d-flex">
+                    <button class="btn btn-outline-warning rounded-0"></button>
+                    <div class="thin-arrow d-flex flex-column justify-content-center">
+                        <span class="d-inline-block border-top border-light position-relative"></span>
+                        <span class="d-inline-block border-top border-light"></span>
+                        <span class="d-inline-block border-top border-light position-relative"></span>
+                    </div>
+                </div>
+                <div class="align-self-center">
+                    <span>5</span> <span class="text-warning">of</span> <span>10</span>
+                </div>
+                <div class="d-flex">
+                    <div class="thin-arrow d-flex flex-column justify-content-center">
+                        <span class="d-inline-block border-top border-light position-relative"></span>
+                        <span class="d-inline-block border-top border-light"></span>
+                        <span class="d-inline-block border-top border-light position-relative"></span>
+                    </div>
+                    <button class="btn btn-outline-warning rounded-0"></button>
+                </div>
             </div>
         </section>
 
         <section id="testimonials" class="container-fluid d-flex flex-column align-items-center">
-            <div class="row">
+            <div class="row mt-5 mb-4">
                 <div class="d-flex justify-content-center align-items-center col-12">
                     <h2 class="text-center text-dark fs-1 m-0">Testimonials</h2>
                 </div>

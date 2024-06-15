@@ -152,6 +152,52 @@ main {
   background: url(../images/gallery.jpg) no-repeat center;
   background-size: cover;
 }
+#gallery #gallery-title .gallerty-title-details {
+  transform: scale(1.25, 0.75);
+}
+#gallery #gallery-title .fa-bars-staggered:first-child {
+  transform: scale(-1, 1);
+  left: 4px;
+}
+#gallery #gallery-title .fa-bars-staggered:last-child {
+  left: -4px;
+}
+#gallery #gallery-images img {
+  width: 33.333vw;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+#gallery #gallery-pagination button {
+  width: 60px;
+  aspect-ratio: 1;
+}
+#gallery #gallery-pagination .thin-arrow {
+  width: 80px;
+  pointer-events: none;
+}
+#gallery #gallery-pagination .thin-arrow span:first-child,
+#gallery #gallery-pagination .thin-arrow span:last-child {
+  width: 15px;
+}
+#gallery #gallery-pagination .thin-arrow span:first-child {
+  top: 1px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+#gallery #gallery-pagination .thin-arrow span:last-child {
+  top: -1px;
+  transform: rotate(45deg);
+  transform-origin: 0;
+}
+#gallery #gallery-pagination .thin-arrow:first-child {
+  rotate: 180deg;
+}
+#gallery #gallery-pagination button + .thin-arrow {
+  margin-left: -35px;
+}
+#gallery #gallery-pagination .thin-arrow + button {
+  margin-left: -35px;
+}
 
 #testimonials #testimonials-carrousel h6 {
   font-family: "Intro", sans-serif;
