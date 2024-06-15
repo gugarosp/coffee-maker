@@ -143,14 +143,57 @@ main {
 
 // PROGRAMS
 #programs {
+    background: url(/images/program-coffee.png) no-repeat bottom right;
+    background-size: 630px;
+
     .tabs {
 
         .tab-buttons {
             border-bottom: 1px solid #c8c8c8;
     
             span {
+                padding-inline: 6rem;
+                color: #adadad;
+                user-select: none;
+                cursor: pointer;
+                @include fontFamilyIntro;
+                
+                &.active-tab {
+                    color: rgba(var(--bs-dark-rgb));
+                    box-shadow: inset 0px -2px 0px 0px rgb(var(--bs-dark-rgb));
+                }
+            }
+        }
+
+        .tab-background-title {
+            top: -12px;
+            
+            h6 {
+                font-size: 14vw;
                 @include fontFamilyIntro;
             }
+
+        }
+
+        .tab-content {
+            margin-top: 80px;
+
+            .program-info {
+                
+                h4, h3 {
+                    font-weight: 900;
+                }
+
+                h3 {
+                    font-size: 3rem;
+                }
+
+                ul li i {
+                    font-size: 1.25rem;
+                    width: 20px;
+                }
+            }
+
         }
     
     }

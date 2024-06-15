@@ -104,11 +104,45 @@ main {
   background-size: 10vw;
 }
 
+#programs {
+  background: url(/images/program-coffee.png) no-repeat bottom right;
+  background-size: 630px;
+}
 #programs .tabs .tab-buttons {
   border-bottom: 1px solid #c8c8c8;
 }
 #programs .tabs .tab-buttons span {
+  padding-inline: 6rem;
+  color: #adadad;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
   font-family: "Intro", sans-serif;
+}
+#programs .tabs .tab-buttons span.active-tab {
+  color: rgba(var(--bs-dark-rgb));
+  box-shadow: inset 0px -2px 0px 0px rgb(var(--bs-dark-rgb));
+}
+#programs .tabs .tab-background-title {
+  top: -12px;
+}
+#programs .tabs .tab-background-title h6 {
+  font-size: 14vw;
+  font-family: "Intro", sans-serif;
+}
+#programs .tabs .tab-content {
+  margin-top: 80px;
+}
+#programs .tabs .tab-content .program-info h4, #programs .tabs .tab-content .program-info h3 {
+  font-weight: 900;
+}
+#programs .tabs .tab-content .program-info h3 {
+  font-size: 3rem;
+}
+#programs .tabs .tab-content .program-info ul li i {
+  font-size: 1.25rem;
+  width: 20px;
 }
 #programs #programs-details h6 {
   font-family: "Intro", sans-serif;
