@@ -306,8 +306,12 @@ main {
     }
 
     #gallery-images {
+        $imageGap: 1.5rem;
+        gap: $imageGap;
+        transition: left .5s;
+
         img {
-            width: 33.333vw;
+            width: calc(50% - ($imageGap / 2));
             flex-grow: 0;
             flex-shrink: 0;
         }

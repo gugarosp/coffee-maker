@@ -223,8 +223,12 @@ main {
 #gallery #gallery-title .fa-bars-staggered:last-child {
   left: -4px;
 }
+#gallery #gallery-images {
+  gap: 1.5rem;
+  transition: left 0.5s;
+}
 #gallery #gallery-images img {
-  width: 33.333vw;
+  width: calc(50% - 0.75rem);
   flex-grow: 0;
   flex-shrink: 0;
 }

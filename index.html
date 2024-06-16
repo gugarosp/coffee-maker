@@ -19,6 +19,7 @@
     <script src="js/scripts.js"></script>
     <script src="js/carrousel.js"></script>
     <script src="js/tabs.js"></script>
+    <script src="js/gallery.js"></script>
 
 </head>
 
@@ -380,15 +381,24 @@
                     and select the type of cooking yourself
                 </p>
             </div>
-            <div id="gallery-images" class="d-flex gap-4 mt-4 w-100 position-relative">
-                <img src="images/program-basic.jpg">
-                <img src="images/program-basic.jpg">
-                <img src="images/program-basic.jpg">
+            <div class="d-flex justify-content-center px-md-5 mx-md-5">
+                <div id="gallery-images" class="d-flex mt-4 position-relative">
+                    <img src="images/program-basic.jpg">
+                    <img src="images/program-basic.jpg">
+                    <img src="images/program-basic.jpg">
+                    <img src="images/program-basic.jpg">
+                    <img src="images/program-basic.jpg">
+                    <img src="images/program-basic.jpg">
+                    <img src="images/program-basic.jpg">
+                    <img src="images/program-basic.jpg">
+                    <img src="images/program-basic.jpg">
+                    <img src="images/program-basic.jpg">
+                </div>
             </div>
             <div id="gallery-pagination"
                 class="d-flex justify-content-center gap-5 pb-5 my-5 text-light position-relative">
                 <div class="d-flex">
-                    <button class="btn btn-outline-warning rounded-0"></button>
+                    <button id="gallery-to-left" class="btn btn-outline-warning rounded-0"></button>
                     <div class="thin-arrow d-flex flex-column justify-content-center">
                         <span class="d-inline-block border-top border-light position-relative"></span>
                         <span class="d-inline-block border-top border-light"></span>
@@ -396,7 +406,9 @@
                     </div>
                 </div>
                 <div class="align-self-center">
-                    <span>5</span> <span class="text-warning">of</span> <span>10</span>
+                    <span id="gallery-current-page">0</span>
+                    <span class="text-warning">of</span>
+                    <span id="gallery-total-pages">0</span>
                 </div>
                 <div class="d-flex">
                     <div class="thin-arrow d-flex flex-column justify-content-center">
@@ -404,7 +416,7 @@
                         <span class="d-inline-block border-top border-light"></span>
                         <span class="d-inline-block border-top border-light position-relative"></span>
                     </div>
-                    <button class="btn btn-outline-warning rounded-0"></button>
+                    <button id="gallery-to-right" class="btn btn-outline-warning rounded-0"></button>
                 </div>
             </div>
 
@@ -621,8 +633,9 @@
                             </div>
                             <div class="col-xl-5 offset-xl-1 d-flex flex-column justify-content-end">
                                 <div class="d-flex">
-                                    <button class="btn btn-outline-dark btn-sm px-5 py-3 text-uppercase rounded-0"><span
-                                            class="px-4">Send</span></button>
+                                    <button class="btn btn-outline-dark btn-sm px-5 py-3 text-uppercase rounded-0">
+                                        <span class="px-4">Send</span>
+                                    </button>
                                     <div class="thin-arrow d-flex flex-column justify-content-center">
                                         <span class="d-inline-block border-top border-dark position-relative"></span>
                                         <span class="d-inline-block border-top border-dark"></span>
