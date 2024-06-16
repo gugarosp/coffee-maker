@@ -220,6 +220,13 @@ main {
 
         .tab-content {
             margin-top: 80px;
+            transition: left, .5s;
+
+            .tab-content-item {
+                width: 100%;
+                flex-grow: 0;
+                flex-shrink: 0;
+            }
 
             .program-info {
                 
