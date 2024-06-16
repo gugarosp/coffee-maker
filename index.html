@@ -19,7 +19,7 @@
 <body>
 
     <header class="h-100 d-flex flex-column">
-        <nav class="container-fluid d-flex flex-column align-items-center pt-3">
+        <nav class="container-fluid position-fixed d-flex flex-column align-items-center pt-3 z-1">
             <div class="row h-100">
                 <div class="col-12 d-flex justify-content-end gap-5 position-relative">
                     <div id="logo-container" class="d-inline-block me-auto position-absolute start-0">
@@ -59,7 +59,7 @@
                 </div>
             </div>
         </nav>
-        <div id="menu-line" class="opacity-25">
+        <div id="menu-line" class="w-100 position-fixed opacity-25 z-1">
             <div class="menu-line-side border-bottom"></div>
             <div id="menu-line-center">
                 <div class="border-bottom"></div>
@@ -130,18 +130,18 @@
                                         <img src="images/program-basic.jpg" class="w-100">
                                     </div>
                                     <div class="program-info col-5 d-flex flex-column justify-content-end gap-3">
-                                        <h4 class="title-alternative fs-3 mb-auto">Beginners Course</h4>
+                                        <h4 class="title-alternative fs-2 mb-auto">Beginners Course</h4>
     
                                         <ul class="p-0 d-flex flex-column gap-2">
                                             <li class="list-group-item">
                                                 <i class="fa-solid fa-award text-center me-1"></i> Certificate
                                             </li>
                                             <li class="list-group-item">
-                                                <i class="fa-solid fa-circle text-center me-1"></i> 240 minets
+                                                <i class="fa-solid fa-clock text-center me-1"></i> 240 minets
                                             </li>
                                         </ul>
     
-                                        <h3 class="title-alternative m-0">1 500<span>usd</span></h3>
+                                        <h3 class="title-alternative m-0">1 500<span class="fs-3">usd</span></h3>
     
                                         <div>
                                             <button class="btn btn-dark btn-sm px-5 py-3 text-uppercase rounded-0"><span class="px-4">Registration</span></button>

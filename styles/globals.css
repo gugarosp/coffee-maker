@@ -33,6 +33,7 @@ header address {
 }
 header #menu-line {
   display: flex;
+  top: 72px;
 }
 header #menu-line .menu-line-side {
   flex-grow: 1;
