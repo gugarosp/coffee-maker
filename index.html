@@ -25,7 +25,10 @@
 
 <body>
 
+    <!-- HEADER -->
     <header class="h-100 d-flex flex-column">
+
+        <!-- NAV -->
         <nav class="container-fluid position-fixed d-flex flex-column align-items-center pt-3 z-2">
             <div class="row h-100">
                 <div class="col-12 d-flex justify-content-end gap-5 position-relative">
@@ -38,30 +41,30 @@
                     <menu
                         class="d-inline-flex flex-md-row flex-column align-items-center m-0 ps-0 pe-xl-4 pb-md-0 pt-md-0 py-3 d-md-flex d-none gap-1">
                         <li class="list-group-item mx-xl-4 mx-lg-2 mx-md-1 mx-0 h-100">
-                            <a href="#" class="d-flex align-items-center h-100 p-2 text-decoration-none">Program</a>
+                            <a href="#programs" class="d-flex align-items-center h-100 p-2 text-decoration-none">Program</a>
                         </li>
                         <li class="list-group-item d-flex align-items-center h-100 my-2">
                             <i class="fa-solid fa-circle text-light"></i>
                         <li class="list-group-item mx-xl-4 mx-lg-2 mx-md-1 mx-0 h-100">
-                            <a href="#" class="d-flex align-items-center h-100 p-2 text-decoration-none">Gallery</a>
+                            <a href="#gallery" class="d-flex align-items-center h-100 p-2 text-decoration-none">Gallery</a>
                         </li>
                         <li class="list-group-item d-flex align-items-center h-100 m-2">
                             <i class="fa-solid fa-circle text-light"></i>
                         </li>
                         <li class="list-group-item mx-xl-4 mx-lg-2 mx-md-1 mx-0 h-100">
-                            <a href="#" class="d-flex align-items-center h-100 p-2 text-decoration-none">Reviews</a>
+                            <a href="#reviews" class="d-flex align-items-center h-100 p-2 text-decoration-none">Reviews</a>
                         </li>
                         <li class="list-group-item d-flex align-items-center h-100 m-2">
                             <i class="fa-solid fa-circle text-light"></i>
                         </li>
                         <li class="list-group-item mx-xl-4 mx-lg-2 mx-md-1 mx-0 h-100">
-                            <a href="#" class="d-flex align-items-center h-100 p-2 text-decoration-none">Partners</a>
+                            <a href="#our-partners" class="d-flex align-items-center h-100 p-2 text-decoration-none">Partners</a>
                         </li>
                         <li class="list-group-item d-flex align-items-center h-100 m-2">
                             <i class="fa-solid fa-circle text-light"></i>
                         </li>
                         <li class="list-group-item mx-xl-4 mx-lg-2 mx-md-1 mx-0 h-100">
-                            <a href="#" class="d-flex align-items-center h-100 p-2 text-decoration-none">Contact</a>
+                            <a href="#contact" class="d-flex align-items-center h-100 p-2 text-decoration-none">Contact</a>
                         </li>
                     </menu>
                     <address class="d-inline-flex align-items-center h-100 m-0">
@@ -80,6 +83,8 @@
             </div>
             <div class="menu-line-side border-bottom"></div>
         </div>
+
+        <!-- HERO INFO -->
         <div id="hero-info" class="container-fluid flex-grow-1 text-center position-relative">
             <div class="row h-100 d-flex align-items-center position-relative">
                 <div class="col-12 d-flex flex-column gap-4">
@@ -107,13 +112,19 @@
                             </button>
                         </div>
                 </div>
-                <div class="bean-details col-12 position-absolute h-100 w-100">
-                    <div class="position-absolute bottom-0 end-0"><img src="images/hero-bean.png" /></div>
-                </div>
+                
             </div>
         </div>
+
+        <div class="bean-details position-absolute h-100 w-100">
+            <div class="position-absolute" style="bottom: -80px; right: -10px"><img src="images/hero-bean.png" /></div>
+        </div>
     </header>
+
+    <!-- MAIN -->
     <main>
+
+        <!-- PROGRAMS -->
         <section id="programs" class="container-fluid d-flex flex-column align-items-center position-relative">
             <div class="row mt-5">
                 <div class="d-flex justify-content-center align-items-center col-12 mt-5 mb-4 gap-4">
@@ -124,7 +135,7 @@
                 <p class="text-center col-12">We share their experience and professional barista championships multiple
                     winners</p>
                 <div class="col-12">
-                    <div class="tabs">
+                    <div class="tabs overflow-hidden">
                         <ul class="tab-buttons d-flex justify-content-center p-0 m-0">
                             <li class="list-group-item w-100">
                                 <span class="d-inline-block w-100 fs-6 py-4 text-center active-tab">Basic</span>
@@ -137,8 +148,10 @@
                             </li>
                         </ul>
                         <div class="tab-background-title position-relative opacity-25">
-                            <div class="position-absolute end-0 opacity-25 pt-1 mt-4">
-                                <h6>Basic</h6>
+                            <div class="position-absolute end-0 opacity-25 pt-1 mt-4 w-100">
+                                <h6 class="position-absolute top-0 w-100 text-end tab-background-title-active">Basic</h6>
+                                <h6 class="position-absolute top-0 w-100 text-end">Premium</h6>
+                                <h6 class="position-absolute top-0 w-100 text-end">Platinum</h6>
                             </div>
                         </div>
                         <div class="overflow-hidden">
@@ -184,11 +197,11 @@
                                                     <i class="fa-solid fa-award text-center me-1"></i> Certificate
                                                 </li>
                                                 <li class="list-group-item">
-                                                    <i class="fa-solid fa-clock text-center me-1"></i> 240 minets
+                                                    <i class="fa-solid fa-clock text-center me-1"></i> 320 minets
                                                 </li>
                                             </ul>
     
-                                            <h3 class="title-alternative m-0">1 500<span class="fs-3">usd</span></h3>
+                                            <h3 class="title-alternative m-0">2 500<span class="fs-3">usd</span></h3>
     
                                             <div>
                                                 <button class="btn btn-dark btn-sm px-5 py-3 text-uppercase rounded-0"><span
@@ -211,11 +224,11 @@
                                                     <i class="fa-solid fa-award text-center me-1"></i> Certificate
                                                 </li>
                                                 <li class="list-group-item">
-                                                    <i class="fa-solid fa-clock text-center me-1"></i> 240 minets
+                                                    <i class="fa-solid fa-clock text-center me-1"></i> 400 minets
                                                 </li>
                                             </ul>
     
-                                            <h3 class="title-alternative m-0">1 500<span class="fs-3">usd</span></h3>
+                                            <h3 class="title-alternative m-0">3 500<span class="fs-3">usd</span></h3>
     
                                             <div>
                                                 <button class="btn btn-dark btn-sm px-5 py-3 text-uppercase rounded-0"><span
@@ -354,16 +367,16 @@
                 </div>
             </div>
 
-            <div class="bean-details row position-absolute h-100 z-1">
-                <div class="col-12">
-                    <div class="position-absolute top-0 start-0"><img src="/images/program-bean-1.png"></div>
-                    <div class="position-absolute top-0 end-0"><img src="/images/program-bean-2.png"></div>
-                </div>
+            <div class="bean-details position-absolute h-100 w-100 z-1 overflow-hidden">
+                <div class="position-absolute" style="top: 160px; left: -27px"><img src="/images/program-bean-1.png"></div>
+                <div class="position-absolute" style="top: 620px; right: -70px;"><img src="/images/program-bean-2.png"></div>
+                <div class="position-absolute" style="bottom: -130px; left: 70px;"><img src="/images/gallery-bean-1.png"></div>
             </div>
         </section>
 
+        <!-- GALLERY -->
         <section id="gallery"
-            class="container-fluid d-flex flex-column align-items-center overflow-hidden position-relative">
+            class="container-fluid d-flex flex-column align-items-center overflow-hidden position-relative pb-5">
             <div id="gallery-title" class="row mt-5 mb-2 position-relative">
                 <div class="d-flex justify-content-center align-items-center col-12 mt-5 mb-4 gap-3">
                     <div class="gallerty-title-details d-flex">
@@ -419,16 +432,10 @@
                     <button id="gallery-to-right" class="btn btn-outline-warning rounded-0"></button>
                 </div>
             </div>
-
-            <div class="bean-details row position-absolute h-100 z-1">
-                <div class="col-12">
-                    <div class="position-absolute top-0 start-0"><img src="/images/gallery-bean-1.png"></div>
-                    <div class="position-absolute bottom-0 end-0"><img src="/images/gallery-bean-2.png"></div>
-                </div>
-            </div>
         </section>
 
-        <section id="testimonials" class="container-fluid d-flex flex-column align-items-center">
+        <!-- REVIEWS -->
+        <section id="reviews" class="container-fluid d-flex flex-column align-items-center position-relative">
             <div class="row">
                 <div class="d-flex justify-content-center align-items-center col-12 mt-5 mb-4">
                     <h2 class="text-center text-dark fs-1 m-0">Testimonials</h2>
@@ -451,7 +458,7 @@
                                 <div class="carrousel-item align-self-center px-3">
                                     <div class="text-center">
                                         <div class="pb-2">
-                                            <img class="testimonials-photo rounded-circle" src="images/program-basic.jpg">
+                                            <img class="reviews-photo rounded-circle" src="images/program-basic.jpg">
                                         </div>
     
                                         <h6 class="my-4">Alex Nikandrov</h6>
@@ -471,7 +478,7 @@
                                 <div class="carrousel-item align-self-center px-3">
                                     <div class="text-center">
                                         <div class="pb-2">
-                                            <img class="testimonials-photo rounded-circle" src="images/program-basic.jpg">
+                                            <img class="reviews-photo rounded-circle" src="images/program-basic.jpg">
                                         </div>
     
                                         <h6 class="my-4">Alex Nikandrov</h6>
@@ -491,7 +498,7 @@
                                 <div class="carrousel-item align-self-center px-3">
                                     <div class="text-center">
                                         <div class="pb-2">
-                                            <img class="testimonials-photo rounded-circle" src="images/program-basic.jpg">
+                                            <img class="reviews-photo rounded-circle" src="images/program-basic.jpg">
                                         </div>
     
                                         <h6 class="my-4">Alex Nikandrov</h6>
@@ -524,8 +531,13 @@
                 </div>
             </div>
 
+            <div class="bean-details position-absolute h-100 w-100">
+                <div class="position-absolute" style="right: 30px; top: -120px;"><img src="/images/gallery-bean-2.png"></div>
+            </div>
+
         </section>
 
+        <!-- OUR PARTNERS -->
         <section id="our-partners" class="container-fluid d-flex flex-column align-items-center">
             <div class="row mb-2">
                 <div class="d-flex justify-content-center align-items-center col-12 pt-4 mt-5 mb-4 gap-3">
@@ -607,11 +619,11 @@
             </div>
         </section>
 
-        <section id="contact" class="container-fluid d-flex flex-column align-items-center">
-            <div class="row">
-                <div class="col-md-5 position-relative">
-                    <img src="images/contact-beans.png" class="w-100 position-absolute top-0" />
-                    <img src="images/contact-big-bean.png" class="w-50 position-absolute end-0" />
+        <!-- CONTACT -->
+        <section id="contact" class="container-fluid d-flex flex-column align-items-center position-relative">
+            <div class="row pt-5">
+                <div class="col-md-4 offset-md-1 pt-5 d-flex justify-content-center align-items-center position-relative z-1">
+                    <img src="images/contact-big-bean.png" class="w-75" />
                 </div>
                 <div class="col-md-7 px-md-5">
                     <div class="row mb-5 pb-2">
@@ -647,10 +659,17 @@
                     </form>
                 </div>
             </div>
+
+            <div class="bean-details position-absolute h-100 w-100">
+                <div class="position-absolute" style="left: -30px">
+                    <img src="images/contact-beans.png" class="w-50">
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer class="container-fluid d-flex flex-column align-items-center">
+    <!-- FOOTER -->
+    <footer class="container-fluid d-flex flex-column align-items-center position-relative">
         <div class="row mt-5 mb-3 pt-5">
             <div class="d-flex justify-content-center align-items-center col-12 mt-5 mb-4 gap-3">
                 <h2 class="text-center text-light fs-1 m-0">Professional School <br> Barista</h2>
@@ -693,25 +712,25 @@
             <div id="footer-links" class="col-12 d-flex justify-content-center gap-5 position-relative p-4 order-1">
                 <menu class="d-inline-flex flex-sm-row flex-column align-items-center m-0 ps-0 my-2 gap-4">
                     <li class="list-group-item">
-                        <a href="#" class="d-flex align-items-center h-100 p-2 text-decoration-none">Program</a>
+                        <a href="#programs" class="d-flex align-items-center h-100 p-2 text-decoration-none">Program</a>
                     </li>
                     <li class="list-group-item d-flex align-items-center h-100">
                         <i class="fa-solid fa-circle text-light"></i>
                     </li>
                     <li class="list-group-item">
-                        <a href="#" class="d-flex align-items-center h-100 p-2 text-decoration-none">Gallery</a>
+                        <a href="#gallery" class="d-flex align-items-center h-100 p-2 text-decoration-none">Gallery</a>
                     </li>
                     <li class="list-group-item d-flex align-items-center h-100">
                         <i class="fa-solid fa-circle text-light"></i>
                     </li>
                     <li class="list-group-item">
-                        <a href="#" class="d-flex align-items-center h-100 p-2 text-decoration-none">Testimonials</a>
+                        <a href="#reviews" class="d-flex align-items-center h-100 p-2 text-decoration-none">reviews</a>
                     </li>
                     <li class="list-group-item d-flex align-items-center h-100">
                         <i class="fa-solid fa-circle text-light"></i>
                     </li>
                     <li class="list-group-item">
-                        <a href="#" class="d-flex align-items-center h-100 p-2 text-decoration-none">Contact</a>
+                        <a href="#contact" class="d-flex align-items-center h-100 p-2 text-decoration-none">Contact</a>
                     </li>
                 </menu>
             </div>

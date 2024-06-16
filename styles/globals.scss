@@ -14,11 +14,16 @@ body {
     font-family: 'Minion Pro', serif;
     font-size: 14px;
     letter-spacing: 0.025rem;
+
+    &> * {
+        min-width: 315px;
+    }
 }
 
 header, section, footer {
     &> .row,
-    &> nav .row {
+    &> nav .row,
+    #hero-info {
         width: 100%;
         max-width: $maxWidth;
     }
@@ -89,9 +94,11 @@ header {
         @include fontFamilyIntro;
     }
 
+    $navOffsetTop: 72px;
+
     #menu-line {
         display: flex;
-        top: 72px;
+        top: $navOffsetTop;
         
         .menu-line-side {
             flex-grow: 1;
@@ -102,6 +109,10 @@ header {
             max-width: $maxWidth;
             padding-left: $logoWidth + ($logoOffset * 2);
         }
+    }
+
+    #hero-info {
+        padding-top: $navOffsetTop;
     }
     
     #hero-stars {
@@ -209,11 +220,17 @@ main {
         }
 
         .tab-background-title {
-            top: -12px;
+            top: -32px;
             
             h6 {
                 font-size: 14vw;
                 @include fontFamilyIntro;
+                right: -100%;
+                transition: right 1s;
+
+                &.tab-background-title-active {
+                    right: 0;
+                }
             }
 
         }
@@ -327,10 +344,10 @@ main {
     }
 }
 
-// TESTIMONIALS
-#testimonials {
+// REVIEWS
+#reviews {
 
-    .testimonials-photo {
+    .reviews-photo {
         width: 180px;
         aspect-ratio: 1;
         object-fit: cover;
@@ -488,6 +505,37 @@ button + .thin-arrow {
 // BEAN DETAILS
 .bean-details {
     pointer-events: none;
+
+    &> div {
+        scale: .5
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+header .bean-details div {
+    width: 240px;
+}
+
+#programs .bean-details {
+    
+    div:nth-child(1) {
+        width: 110px;
+    }
+
+    div:nth-child(2) {
+        width: 160px;
+    }
+
+    div:nth-child(3) {
+        width: 135px;
+    }
+}
+
+#reviews .bean-details > div {
+    width: 155px;
 }
 
 // BUTTONS

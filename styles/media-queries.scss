@@ -1,17 +1,5 @@
 @media (min-width: 576px) {
-    footer {
-        #footer-info {
-            .footer-icons {
-                border-bottom: 1px solid #ffffff25;
-            }
-
-            .footer-contact-info {
-                border-bottom: 0;
-            }
-        }
-    }
-
-
+    // HEADER
     header {
 
         nav {
@@ -25,4 +13,34 @@
 
     }
 
+    // FOOTER
+    footer {
+        #footer-info {
+            .footer-icons {
+                border-bottom: 1px solid #ffffff25;
+            }
+
+            .footer-contact-info {
+                border-bottom: 0;
+            }
+        }
+    }
+
+    // BEAN DETAILS
+}
+
+@media (min-width: 992px) {
+    .bean-details div {
+        scale: .75;
+    }
+}
+
+@media (min-width: 1200px) {
+    #programs .tabs .tab-background-title h6 {
+        font-size: 13rem;
+    }
+
+    .bean-details div {
+        scale: 1;
+    }
 }

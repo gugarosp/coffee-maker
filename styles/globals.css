@@ -7,8 +7,14 @@ body {
   font-size: 14px;
   letter-spacing: 0.025rem;
 }
+body > * {
+  min-width: 315px;
+}
 
-header > .row, header > nav .row, section > .row, section > nav .row, footer > .row, footer > nav .row {
+header > .row, header > nav .row,
+header #hero-info, section > .row, section > nav .row,
+section #hero-info, footer > .row, footer > nav .row,
+footer #hero-info {
   width: 100%;
   max-width: 1200px;
 }
@@ -75,6 +81,9 @@ header #menu-line #menu-line-center {
   width: 100%;
   max-width: 1200px;
   padding-left: 14.5rem;
+}
+header #hero-info {
+  padding-top: 72px;
 }
 header #hero-stars {
   font-size: 0.625rem;
@@ -158,11 +167,16 @@ main {
   box-shadow: inset 0px -2px 0px 0px rgb(var(--bs-dark-rgb));
 }
 #programs .tabs .tab-background-title {
-  top: -12px;
+  top: -32px;
 }
 #programs .tabs .tab-background-title h6 {
   font-size: 14vw;
   font-family: "Intro", sans-serif;
+  right: -100%;
+  transition: right 1s;
+}
+#programs .tabs .tab-background-title h6.tab-background-title-active {
+  right: 0;
 }
 #programs .tabs .tab-content {
   margin-top: 80px;
@@ -237,13 +251,13 @@ main {
   aspect-ratio: 1;
 }
 
-#testimonials .testimonials-photo {
+#reviews .reviews-photo {
   width: 180px;
   aspect-ratio: 1;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#testimonials h6 {
+#reviews h6 {
   font-family: "Intro", sans-serif;
   letter-spacing: -0.0825rem;
 }
@@ -361,6 +375,30 @@ button + .thin-arrow {
 
 .bean-details {
   pointer-events: none;
+}
+.bean-details > div {
+  scale: 0.5;
+}
+.bean-details img {
+  width: 100%;
+}
+
+header .bean-details div {
+  width: 240px;
+}
+
+#programs .bean-details div:nth-child(1) {
+  width: 110px;
+}
+#programs .bean-details div:nth-child(2) {
+  width: 160px;
+}
+#programs .bean-details div:nth-child(3) {
+  width: 135px;
+}
+
+#reviews .bean-details > div {
+  width: 155px;
 }
 
 .btn {
