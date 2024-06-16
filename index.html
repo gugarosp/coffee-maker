@@ -12,6 +12,7 @@
     <link href="styles/headings.css" rel="stylesheet">
     <link href="styles/forms.css" rel="stylesheet">
     <link href="styles/globals.css" rel="stylesheet">
+    <link href="styles/medias-queries.css" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/3972107aac.js" crossorigin="anonymous"></script>
 </head>
@@ -22,10 +23,10 @@
         <nav class="container-fluid position-fixed d-flex flex-column align-items-center pt-3 z-1">
             <div class="row h-100">
                 <div class="col-12 d-flex justify-content-end gap-5 position-relative">
-                    <div id="logo-container" class="d-inline-block me-auto position-absolute start-0">
+                    <div id="logo-container" class="d-inline-block ms-xl-3 me-auto position-absolute start-0">
                         <a href="/"><img id="logo" src="images/logo.png" alt="Coffee Maker" /></a>
                     </div>
-                    <menu class="d-inline-flex m-0 ps-0 pe-5 gap-4">
+                    <menu class="d-inline-flex m-0 ps-0 pe-5 gap-4 d-none">
                         <li class="list-group-item">
                             <a href="#" class="d-flex align-items-center h-100 px-2 text-decoration-none">Program</a>
                         </li>
@@ -81,16 +82,17 @@
                     </div>
                     <h1 class="text-light">barista training in <span class="text-warning">amsterdam</span></h1>
                     <h6 class="title-alternative text-light">On the basis of the company's largest coffee roasters</h5>
-                    <div id="hero-bottom-detail" class="d-flex justify-content-center align-items-center gap-1 mb-5">
-                        <div class="pointy-arrow-left">.</div>
-                        <i class="fa-solid fa-circle"></i>
-                        <div class="pointy-arrow-right">.</div>
-                    </div>
-                    <div>
-                        <button type="button" class="btn btn-outline-light btn-lg rounded-circle">
-                            <i class="fa-solid fa-chevron-down text-warning"></i>
-                        </button>
-                    </div>
+                        <div id="hero-bottom-detail"
+                            class="d-flex justify-content-center align-items-center gap-1 mb-5">
+                            <div class="pointy-arrow-left">.</div>
+                            <i class="fa-solid fa-circle"></i>
+                            <div class="pointy-arrow-right">.</div>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-outline-light btn-lg rounded-circle">
+                                <i class="fa-solid fa-chevron-down text-warning position-relative m-1"></i>
+                            </button>
+                        </div>
                 </div>
             </div>
         </div>
@@ -108,14 +110,14 @@
                 <div class="col-12">
                     <div class="tabs">
                         <ul class="tab-buttons d-flex justify-content-center p-0">
-                            <li class="list-group-item">
-                                <span class="d-inline-block fs-6 py-4 active-tab">Basic</span>
+                            <li class="list-group-item w-100">
+                                <span class="d-inline-block w-100 fs-6 py-4 text-center active-tab">Basic</span>
                             </li>
-                            <li class="list-group-item">
-                                <span class="d-inline-block fs-6 py-4">Premium</span>
+                            <li class="list-group-item w-100">
+                                <span class="d-inline-block w-100 fs-6 py-4 text-center">Premium</span>
                             </li>
-                            <li class="list-group-item">
-                                <span class="d-inline-block fs-6 py-4">Platinum</span>
+                            <li class="list-group-item w-100">
+                                <span class="d-inline-block w-100 fs-6 py-4 text-center">Platinum</span>
                             </li>
                         </ul>
                         <div class="tab-background-title position-relative opacity-25">
@@ -126,12 +128,13 @@
                         <ul class="tab-content p-0 mb-5">
                             <li class="tab-content-item list-group-item">
                                 <div class="row">
-                                    <div class="program-image col-7">
+                                    <div class="program-image col-md-7 mb-md-0 mb-3">
                                         <img src="images/program-basic.jpg" class="w-100">
                                     </div>
-                                    <div class="program-info col-5 d-flex flex-column justify-content-end gap-3">
+                                    <div
+                                        class="program-info col-md-5 d-flex flex-column justify-content-end gap-3 text-md-start text-center">
                                         <h4 class="title-alternative fs-2 mb-auto">Beginners Course</h4>
-    
+
                                         <ul class="p-0 d-flex flex-column gap-2">
                                             <li class="list-group-item">
                                                 <i class="fa-solid fa-award text-center me-1"></i> Certificate
@@ -140,11 +143,12 @@
                                                 <i class="fa-solid fa-clock text-center me-1"></i> 240 minets
                                             </li>
                                         </ul>
-    
+
                                         <h3 class="title-alternative m-0">1 500<span class="fs-3">usd</span></h3>
-    
+
                                         <div>
-                                            <button class="btn btn-dark btn-sm px-5 py-3 text-uppercase rounded-0"><span class="px-4">Registration</span></button>
+                                            <button class="btn btn-dark btn-sm px-5 py-3 text-uppercase rounded-0"><span
+                                                    class="px-4">Registration</span></button>
                                         </div>
                                     </div>
                                 </div>
@@ -152,22 +156,22 @@
                         </ul>
                     </div>
                     <div id="programs-details" class="row pt-4">
-                        <div class="col-4 pe-5">
+                        <div class="col-md-4 pe-md-5 order-md-1 order-1">
                             <div class="d-flex align-items-end h-100 border-top border-dark pt-3">
                                 <h6 class="lh-base">Provenance coffee and basic concepts:</h6>
                             </div>
                         </div>
-                        <div class="col-4 px-4">
+                        <div class="col-md-4 px-md-4 order-md-1 order-2">
                             <div class="d-flex align-items-end h-100 border-top border-dark pt-3">
                                 <h6 class="lh-base">Coffee production technology:</h6>
                             </div>
                         </div>
-                        <div class="col-4 ps-5">
+                        <div class="col-md-4 ps-md-5 order-md-1 order-3">
                             <div class="d-flex align-items-end h-100 border-top border-dark pt-3">
                                 <h6 class="lh-base">Roasting Technology bean. and Stage types of roasting.</h6>
                             </div>
                         </div>
-                        <div class="col-4 pe-5">
+                        <div class="col-md-4 pe-md-5 order-md-2 order-1 mb-md-0 mb-4">
                             <p class="lh-lg">
                                 Legend of the origin of coffee. <br>
                                 - Chronicle of the spread of the coffee tree <br>
@@ -180,7 +184,7 @@
                                 - Breeding and hybridization of coffee tree <br>
                             </p>
                         </div>
-                        <div class="col-4 px-4">
+                        <div class="col-md-4 px-md-4 order-md-2 order-2 mb-md-0 mb-4">
                             <p class="lh-lg">
                                 - Methods for collecting coffee berries <br>
                                 - Processing collected berries <br>
@@ -190,7 +194,7 @@
                                 - Storage of green (not fried) Coffee <br>
                             </p>
                         </div>
-                        <div class="col-4 ps-5">
+                        <div class="col-md-4 ps-md-5 order-md-2 order-3 mb-md-0 mb-4">
                             <p class="lh-lg">
                                 - The technology of roasting coffee beans. <br>
                                 - Changes in the beans. <br>
@@ -201,7 +205,7 @@
                                 - Storage roasted coffee <br>
                             </p>
                         </div>
-                        <div class="col-12 my-5">
+                        <div class="col-12 my-5 order-md-3 order-4">
                             <h6>The course also includes:</h6>
                             <table class="table table-bordered border-dark w-auto mb-5">
                                 <tbody>
@@ -279,7 +283,8 @@
             </div>
         </section>
 
-        <section id="gallery" class="container-fluid d-flex flex-column align-items-center overflow-hidden position-relative">
+        <section id="gallery"
+            class="container-fluid d-flex flex-column align-items-center overflow-hidden position-relative">
             <div id="gallery-title" class="row mt-5 mb-2 position-relative">
                 <div class="d-flex justify-content-center align-items-center col-12 mt-5 mb-4 gap-3">
                     <div class="gallerty-title-details d-flex">
@@ -302,7 +307,8 @@
                 <img src="images/program-basic.jpg">
                 <img src="images/program-basic.jpg">
             </div>
-            <div id="gallery-pagination" class="d-flex justify-content-center gap-5 pb-5 my-5 text-light position-relative">
+            <div id="gallery-pagination"
+                class="d-flex justify-content-center gap-5 pb-5 my-5 text-light position-relative">
                 <div class="d-flex">
                     <button class="btn btn-outline-warning rounded-0"></button>
                     <div class="thin-arrow d-flex flex-column justify-content-center">
@@ -349,14 +355,17 @@
                                     <div class="pb-2">
                                         <img class="testimonials-photo rounded-circle" src="images/program-basic.jpg">
                                     </div>
-    
+
                                     <h6 class="my-4">Alex Nikandrov</h6>
-        
-                                    <p class="lh-lg mb-0">Our company is grateful for the delicious and freshly roasted coffee in our office every day!
+
+                                    <p class="lh-lg mb-0">Our company is grateful for the delicious and freshly roasted
+                                        coffee in our office every day!
                                         Our
-                                        staff of more than 300 people, appreciate quality and flavor of the coffee, because that
+                                        staff of more than 300 people, appreciate quality and flavor of the coffee,
+                                        because that
                                         would
-                                        be important for our office staff were every morning refreshed and in a good mood!
+                                        be important for our office staff were every morning refreshed and in a good
+                                        mood!
                                         Recommended!
                                     </p>
                                 </div>
@@ -395,7 +404,7 @@
                 </div>
             </div>
 
-            <div class="carrousel row my-5 pb-3 w-100">
+            <div class="carrousel row my-md-5 pb-3 w-100">
                 <div class="col-12 mb-4">
                     <div class="d-flex gap-3">
                         <div class="d-flex">
@@ -406,22 +415,22 @@
                         <div class="w-100 d-flex">
                             <div class="carrousel-item align-self-center">
                                 <div class="row">
-                                    <div class="col-2 text-center">
+                                    <div class="col-lg-2 col-sm-4 col-6 mb-lg-0 mb-5 text-center">
                                         <img src="images/partner-abajour.png">
                                     </div>
-                                    <div class="col-2 text-center">
+                                    <div class="col-lg-2 col-sm-4 col-6 mb-lg-0 mb-5 text-center">
                                         <img src="images/partner-altbee.png">
                                     </div>
-                                    <div class="col-2 text-center">
+                                    <div class="col-lg-2 col-sm-4 col-6 mb-lg-0 mb-5 text-center">
                                         <img src="images/partner-dedushka.png">
                                     </div>
-                                    <div class="col-2 text-center">
+                                    <div class="col-lg-2 col-sm-4 col-6 mb-lg-0 mb-5 text-center">
                                         <img src="images/partner-gdeburger.png">
                                     </div>
-                                    <div class="col-2 text-center">
+                                    <div class="col-lg-2 col-sm-4 col-6 mb-lg-0 mb-5 text-center">
                                         <img src="images/partner-baden-baden.png">
                                     </div>
-                                    <div class="col-2 text-center">
+                                    <div class="col-lg-2 col-sm-4 col-6 mb-lg-0 mb-5 text-center">
                                         <img src="images/partner-klass.png">
                                     </div>
                                 </div>
@@ -439,11 +448,11 @@
 
         <section id="have-questions" class="container-fluid d-flex flex-column align-items-center">
             <div class="row">
-                <div class="col-5 position-relative">
-                    <img src="images/have-questions-beans.png" class="w-100 position-absolute top-0"/>
-                    <img src="images/have-questions-big-bean.png" class="w-50 position-absolute end-0"/>
+                <div class="col-md-5 position-relative">
+                    <img src="images/have-questions-beans.png" class="w-100 position-absolute top-0" />
+                    <img src="images/have-questions-big-bean.png" class="w-50 position-absolute end-0" />
                 </div>
-                <div class="col-7 px-5">
+                <div class="col-md-7 px-md-5">
                     <div class="row mb-5 pb-2">
                         <div class="col-12 mt-5 mb-4">
                             <h2 class="text-dark fs-1 m-0">Have questions?</h2>
@@ -455,13 +464,16 @@
 
                     <form>
                         <div class="row mb-5">
-                            <div class="col-6">
-                                <input type="text" placeholder="Your Name" class="form-control rounded-0 radius-0 border-0 border-bottom border-dark bg-transparent px-0 py-2 mb-4">
-                                <input type="tel" placeholder="Contact Number" class="form-control rounded-0 radius-0 border-0 border-bottom border-dark bg-transparent px-0 py-2">
+                            <div class="col-xl-6 mb-xl-0 mb-5">
+                                <input type="text" placeholder="Your Name"
+                                    class="form-control rounded-0 radius-0 border-0 border-bottom border-dark bg-transparent px-0 py-2 mb-4">
+                                <input type="tel" placeholder="Contact Number"
+                                    class="form-control rounded-0 radius-0 border-0 border-bottom border-dark bg-transparent px-0 py-2">
                             </div>
-                            <div class="col-5 offset-md-1 d-flex flex-column justify-content-end">
+                            <div class="col-xl-5 offset-xl-1 d-flex flex-column justify-content-end">
                                 <div class="d-flex">
-                                    <button class="btn btn-outline-dark btn-sm px-5 py-3 text-uppercase rounded-0"><span class="px-4">Send</span></button>
+                                    <button class="btn btn-outline-dark btn-sm px-5 py-3 text-uppercase rounded-0"><span
+                                            class="px-4">Send</span></button>
                                     <div class="thin-arrow d-flex flex-column justify-content-center">
                                         <span class="d-inline-block border-top border-dark position-relative"></span>
                                         <span class="d-inline-block border-top border-dark"></span>
@@ -484,8 +496,8 @@
         </div>
 
         <div class="row mb-5">
-            <div class="col-6">
-                <p class="text-light pe-2">
+            <div class="col-md-6">
+                <p class="text-light pe-md-2">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -499,8 +511,8 @@
                     dolore magnam aliquam quaerat voluptatem.
                 </p>
             </div>
-            <div class="col-6">
-                <p class="text-light ps-2">
+            <div class="col-md-6">
+                <p class="text-light ps-md-2">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -516,14 +528,15 @@
             </div>
         </div>
         <div id="footer-info" class="row text-center">
-            <div id="footer-links" class="col-12 d-flex justify-content-center gap-5 position-relative p-4">
-                <menu class="d-inline-flex m-0 ps-0 my-2 gap-4">
+            <div id="footer-links" class="col-12 d-flex justify-content-center gap-5 position-relative p-4 order-1">
+                <menu class="d-inline-flex flex-sm-row flex-column align-items-center m-0 ps-0 my-2 gap-4">
                     <li class="list-group-item">
                         <a href="#" class="d-flex align-items-center h-100 p-2 text-decoration-none">Program</a>
                     </li>
                     <li class="list-group-item d-flex align-items-center h-100">
                         <i class="fa-solid fa-circle text-light"></i>
-                    </li><li class="list-group-item">
+                    </li>
+                    <li class="list-group-item">
                         <a href="#" class="d-flex align-items-center h-100 p-2 text-decoration-none">Gallery</a>
                     </li>
                     <li class="list-group-item d-flex align-items-center h-100">
@@ -540,30 +553,30 @@
                     </li>
                 </menu>
             </div>
-            <div class="footer-icons col-4 text-light px-2 py-4">
+            <div class="footer-icons col-sm-4 text-light px-2 py-4 order-sm-2 order-2">
                 <i class="fa-solid fa-phone fs-2"></i>
             </div>
-            <div class="footer-icons col-4 text-light px-2 py-4">
+            <div class="footer-icons col-sm-4 text-light px-2 py-4 order-sm-2 order-3">
                 <i class="fa-solid fa-location-dot fs-2"></i>
             </div>
-            <div class="footer-icons col-4 text-light px-2 py-4">
+            <div class="footer-icons col-sm-4 text-light px-2 py-4 order-sm-2 order-4">
                 <i class="fa-solid fa-envelope fs-2"></i>
             </div>
-            <div class="footer-contact-info col-4 text-light px-2 py-4">
+            <div class="footer-contact-info col-sm-4 text-light px-2 py-4 order-sm-3 order-2">
                 +38 000 000 000
             </div>
-            <div class="footer-contact-info col-4 text-light px-2 py-4">
+            <div class="footer-contact-info col-sm-4 text-light px-2 py-4 order-sm-3 order-3">
                 Ukraine, 61002
             </div>
-            <div class="footer-contact-info col-4 text-light px-2 py-4">
+            <div class="footer-contact-info col-sm-4 text-light px-2 py-4 order-sm-3 order-4">
                 hello@.com
             </div>
         </div>
         <div class="row my-5">
-            <div class="col-12 d-flex justify-content-center text-light gap-3">
-                <span>© Copyright 2017 . All Rights Reserved.</span>
+            <div class="col-12 d-flex justify-content-center flex-sm-row flex-column text-light gap-3">
+                <span class="text-center">© Copyright 2017 . All Rights Reserved.</span>
                 <span class="border border-left border-light"></span>
-                <span id="footer-template-author">site template by NIKANDROV.PRO</span>
+                <span id="footer-template-author" class="text-center">site template by NIKANDROV.PRO</span>
             </div>
         </div>
     </footer>

@@ -1,0 +1,8 @@
+@media (min-width: 576px) {
+  footer #footer-info .footer-icons {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1450980392);
+  }
+  footer #footer-info .footer-contact-info {
+    border-bottom: 0;
+  }
+}/*# sourceMappingURL=medias-queries.css.map */
