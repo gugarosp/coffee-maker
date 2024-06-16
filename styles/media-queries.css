@@ -5,4 +5,7 @@
   footer #footer-info .footer-contact-info {
     border-bottom: 0;
   }
+  header nav menu {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=media-queries.css.map */

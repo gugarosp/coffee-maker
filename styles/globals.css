@@ -35,6 +35,28 @@ header nav.nav-scrolled #logo {
 header nav.nav-scrolled + #menu-line {
   display: none;
 }
+header nav.nav-opened {
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+}
+header nav.nav-opened menu {
+  position: absolute;
+  left: calc(var(--bs-gutter-x) * 0.5 * -1);
+  top: 100%;
+  width: calc(100% + var(--bs-gutter-x));
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  opacity: 1;
+}
+header nav #mobile-menu span {
+  cursor: pointer;
+}
+header nav .menu {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
 header #logo {
   width: 12.5rem;
   transition: width 0.3s;

@@ -10,4 +10,19 @@
             }
         }
     }
+
+
+    header {
+
+        nav {
+            $navAnimationTime: .3s;
+
+            menu {
+                opacity: 1;
+            }
+
+        }
+
+    }
+
 }
