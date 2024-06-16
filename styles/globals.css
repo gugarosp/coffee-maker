@@ -139,7 +139,7 @@ main {
 }
 
 #programs {
-  background: url(/images/program-coffee.png) no-repeat bottom right;
+  background: url(/images/program-bg-coffee-beans.png) no-repeat bottom right;
   background-size: 630px;
 }
 #programs .tabs .tab-buttons {
@@ -249,10 +249,12 @@ main {
      object-fit: contain;
 }
 
-#have-questions {
+#contact {
   min-height: 560px;
+  background: url(/images/contact-bg-bean.png) no-repeat bottom right -120px;
+  background-size: 250px;
 }
-#have-questions .thin-arrow {
+#contact .thin-arrow {
   rotate: 180deg;
 }
 
@@ -302,6 +304,14 @@ footer #footer-template-author {
   font-size: 0.75rem;
 }
 
+.carrousel .carrousel-item-wrapper {
+  transition: left 0.5s;
+}
+.carrousel .carrousel-item-wrapper .carrousel-item {
+  width: 100%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
 .carrousel .carrousel-pagination .carrousel-page-active i {
   color: rgb(var(--bs-warning-rgb));
 }
@@ -337,6 +347,10 @@ button + .thin-arrow {
 
 .thin-arrow + button {
   margin-left: -35px;
+}
+
+.bean-details {
+  pointer-events: none;
 }
 
 .btn {
