@@ -1,3 +1,16 @@
+@media (min-width: 1200px) {
+  #programs .tabs .tab-background-title h6 {
+    font-size: 13rem;
+  }
+  .bean-details div {
+    scale: 1;
+  }
+}
+@media (min-width: 992px) {
+  .bean-details div {
+    scale: 0.75;
+  }
+}
 @media (min-width: 576px) {
   header nav menu {
     opacity: 1;
@@ -9,16 +22,11 @@
     border-bottom: 0;
   }
 }
-@media (min-width: 992px) {
-  .bean-details div {
-    scale: 0.75;
+@media (min-width: 400px) {
+  header nav #logo-container {
+    left: 1rem;
   }
-}
-@media (min-width: 1200px) {
-  #programs .tabs .tab-background-title h6 {
-    font-size: 13rem;
-  }
-  .bean-details div {
+  header nav #logo-container a {
     scale: 1;
   }
 }/*# sourceMappingURL=media-queries.css.map */

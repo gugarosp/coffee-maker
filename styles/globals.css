@@ -8,9 +8,9 @@ body {
   letter-spacing: 0.025rem;
 }
 
-header > .row, header > nav .row,
-header #hero-info, section > .row, section > nav .row,
-section #hero-info, footer > .row, footer > nav .row,
+header > .row,
+header #hero-info, section > .row,
+section #hero-info, footer > .row,
 footer #hero-info {
   width: 100%;
   max-width: 1200px;
@@ -25,6 +25,9 @@ header nav {
   width: 100%;
   height: 72px;
   transition: background-color 0.3s, height 0.3s;
+}
+header nav > .row {
+  width: 100%;
 }
 header nav.nav-scrolled {
   height: 108px;
@@ -54,7 +57,13 @@ header nav .menu {
   opacity: 0;
   transition: opacity 0.3s;
 }
-header #logo {
+header nav #logo-container {
+  left: 0rem;
+}
+header nav #logo-container a {
+  scale: 0.75;
+}
+header nav #logo {
   width: 12.5rem;
   transition: width 0.3s;
 }
@@ -69,8 +78,7 @@ header #menu-line .menu-line-side {
   flex-grow: 1;
 }
 header #menu-line #menu-line-center {
-  width: 100%;
-  max-width: 1200px;
+  width: 98%;
   padding-left: 14.5rem;
 }
 header #hero-info {
