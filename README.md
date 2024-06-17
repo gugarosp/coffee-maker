@@ -6,6 +6,6 @@ Just clone this repository or download the files and open the `index.html` file 
 ## Technologies used
 - HTML
 - CSS
-- SASS
+- Sass
 - Javascript
 - JQuery
