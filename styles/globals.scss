@@ -14,10 +14,6 @@ body {
     font-family: 'Minion Pro', serif;
     font-size: 14px;
     letter-spacing: 0.025rem;
-
-    &> * {
-        min-width: 315px;
-    }
 }
 
 header, section, footer {
@@ -39,7 +35,6 @@ header {
     $navAnimationTime: .3s;
     @mixin navBackground {
         background-color: #000000cc;
-        backdrop-filter: blur(6px);
     }
 
     nav {
@@ -347,10 +342,20 @@ main {
 // REVIEWS
 #reviews {
 
-    .reviews-photo {
+    .reviews-photo-wrapper {
         width: 180px;
-        aspect-ratio: 1;
-        object-fit: cover;
+
+        .reviews-photo-social {
+            top: 10px;
+            right: 10px;
+            width: 36px;
+        }
+
+        .reviews-photo {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+        }
     }
 
     h6 {
@@ -375,6 +380,10 @@ main {
     min-height: 560px;
     background: url(/images/contact-bg-bean.png) no-repeat bottom right -120px;
     background-size: 250px;
+
+    .bean-details > div {
+        transform-origin: 30px 115px;
+    }
 
     .thin-arrow {
         rotate: 180deg;
