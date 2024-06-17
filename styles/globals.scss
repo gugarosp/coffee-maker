@@ -14,9 +14,12 @@ body {
     font-family: 'Minion Pro', serif;
     font-size: 14px;
     letter-spacing: 0.025rem;
+    
 }
 
 header, section, footer {
+    scroll-margin-top: 40px;
+
     &> .row,
     #hero-info {
         width: 100%;
@@ -124,6 +127,10 @@ header {
     #hero-stars {
         font-size: .625rem;
     }
+
+    #hero-button {
+        aspect-ratio: 1;
+    }
     
     .pointy-arrow-left,
     .pointy-arrow-right {
@@ -198,6 +205,10 @@ menu {
 main {
     background-image: url(../images/texture.png);
     background-size: 10vw;
+
+    section {
+        margin-top: -1px;
+    }
 
 }
 
@@ -303,15 +314,17 @@ main {
 }
 
 #gallery {
+    scroll-padding-top: 20px;
     background: url(../images/gallery.jpg) no-repeat center;
     background-size: cover;
+    background-position: 0 1px;
 
     @include paintedDetail (180deg);
     @include paintedDetail (0deg);
 
     #gallery-title {
 
-        .gallerty-title-details {
+        .gallery-title-details {
             transform: scale(1.25, 0.75);
         }
 
@@ -348,10 +361,12 @@ main {
         }
 
     }
+
 }
 
 // REVIEWS
 #reviews {
+    scroll-margin-top: 100px;
 
     .reviews-photo-wrapper {
         width: 180px;
@@ -377,12 +392,32 @@ main {
 
 // OUR PARTNERS
 #our-partners {
+    scroll-margin-top: 70px;
     backdrop-filter: brightness(0.95);
 
     img {
         width: 60%;
         aspect-ratio: 1/.6;
         object-fit: contain;
+    }
+
+    #our-partners-title {
+
+        .our-partners-title-details {
+            transform: scale(1.25, 0.75);
+        }
+    
+        $ourPartnersStaggeredOffset: 4px;
+    
+        .fa-bars-staggered:first-child {
+            transform: scale(-1, 1);
+            left: $ourPartnersStaggeredOffset;
+        }
+    
+        .fa-bars-staggered:last-child {
+            left: -1 * $ourPartnersStaggeredOffset;
+        }
+        
     }
 }
 
