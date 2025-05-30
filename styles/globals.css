@@ -100,12 +100,10 @@ header .pointy-arrow-right {
   background-color: #cdb47b;
 }
 header .pointy-arrow-left {
-  -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
-          clip-path: polygon(100% 0, 0 50%, 100% 100%);
+  clip-path: polygon(100% 0, 0 50%, 100% 100%);
 }
 header .pointy-arrow-right {
-  -webkit-clip-path: polygon(0 0, 100% 50%, 0 100%);
-          clip-path: polygon(0 0, 100% 50%, 0 100%);
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
 }
 header h1 {
   font-size: calc(2.25rem + 1.5vw);
@@ -164,9 +162,7 @@ main section {
 }
 #programs .tabs .tab-buttons span {
   color: #adadad;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   cursor: pointer;
   font-family: "Intro", sans-serif;
 }
@@ -275,8 +271,7 @@ main section {
 #reviews .reviews-photo-wrapper .reviews-photo {
   width: 100%;
   aspect-ratio: 1;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #reviews h6 {
   font-family: "Intro", sans-serif;
@@ -285,14 +280,12 @@ main section {
 
 #our-partners {
   scroll-margin-top: 70px;
-  -webkit-backdrop-filter: brightness(0.95);
-          backdrop-filter: brightness(0.95);
+  backdrop-filter: brightness(0.95);
 }
 #our-partners img {
   width: 60%;
   aspect-ratio: 1/0.6;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 #our-partners #our-partners-title .our-partners-title-details {
   transform: scale(1.25, 0.75);
@@ -337,8 +330,7 @@ footer p {
 }
 footer #footer-info {
   font-size: 0.75rem;
-  -webkit-backdrop-filter: brightness(0.5);
-          backdrop-filter: brightness(0.5);
+  backdrop-filter: brightness(0.5);
   border: 1px solid rgba(255, 255, 255, 0.3137254902);
 }
 footer #footer-info :not(i) {
@@ -370,6 +362,13 @@ footer #footer-template-author {
   width: 100%;
   flex-grow: 0;
   flex-shrink: 0;
+}
+.carrousel .carrousel-pagination .btn {
+  cursor: default;
+}
+.carrousel .carrousel-pagination .btn:active, .carrousel .carrousel-pagination .btn:focus {
+  outline: 0;
+  border: 0;
 }
 .carrousel .carrousel-pagination .carrousel-page-active i {
   color: rgb(var(--bs-warning-rgb));
@@ -438,4 +437,6 @@ header .bean-details div {
 
 .btn {
   font-family: "Intro", sans-serif;
-}/*# sourceMappingURL=globals.css.map */
+}
+
+/*# sourceMappingURL=globals.css.map */

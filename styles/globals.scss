@@ -505,6 +505,16 @@ footer {
 
     .carrousel-pagination {
 
+        .btn {
+            cursor: default;
+
+            &:active,
+            &:focus {
+                outline: 0;
+                border: 0;
+            }
+        }
+
         .carrousel-page-active {
 
             i {
