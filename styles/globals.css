@@ -363,12 +363,10 @@ footer #footer-template-author {
   flex-grow: 0;
   flex-shrink: 0;
 }
-.carrousel .carrousel-pagination .btn {
+.carrousel .carrousel-pagination .btn, .carrousel .carrousel-pagination:active, .carrousel .carrousel-pagination:focus {
   cursor: default;
-}
-.carrousel .carrousel-pagination .btn:active, .carrousel .carrousel-pagination .btn:focus {
-  outline: 0;
   border: 0;
+  outline: 0;
 }
 .carrousel .carrousel-pagination .carrousel-page-active i {
   color: rgb(var(--bs-warning-rgb));
